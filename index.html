@@ -1,0 +1,3407 @@
+<!doctype html>
+<html>
+  <head>
+    <title>Cà Mau</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta charset="UTF-8" />
+    <link
+      rel="shortcut icon"
+      href="logo cà mau/favicon.ico"
+      type="image/x-icon"
+    />
+    <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css" />
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+    <link
+      rel="stylesheet"
+      href="https://giabao123123.github.io/webcon/web%20con.css"
+    />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;600;700;800&family=Open+Sans:wght@400;600&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
+    />
+    <style></style>
+  </head>
+  <body class="w3-light-grey" style="padding-top: 110px" id="hero">
+    <a href="#hero" class="scroll-top-button">
+      <i class="fas fa-chevron-up"></i>
+    </a>
+
+    <aside id="backToTop">
+      <a href="#hero" aria-label="Lên đầu trang">
+        <span class="arrow arrow-1"></span>
+        <span class="arrow arrow-2"></span>
+      </a>
+    </aside>
+
+    <aside class="box w3-right" style="margin-top: 2%">
+      <p class="text">Chào mừng đến với tỉnh Cà Mau!</p>
+    </aside>
+
+    <header class="w3-top">
+      <nav
+        class="w3-bar w3-white w3-padding w3-card"
+        style="letter-spacing: 4px"
+      >
+        <a href="#home" class="w3-bar-item neon-box">Cà Mau</a>
+        <button class="scroll-btn left-btn w3-hide-small w3-hide-medium">
+          ❮
+        </button>
+        <button class="scroll-btn right-btn w3-hide-small w3-hide-medium">
+          ❯
+        </button>
+        <audio id="bgMusic">
+          <source
+            src="./New folder/BẮC-BLING-_BẮC-NINH_-OFFICIAL-MV-HOÀ-MINZY-ft-NS-XUÂN-HINH-x-MASEW-x-TUẤN-CRY.mp3"
+            type="audio/mp3"
+          />
+        </audio>
+        <input type="checkbox" id="menu-toggle" />
+        <label for="menu-toggle" class="menu-icon">☰</label>
+        <ul
+          style="
+            background: linear-gradient(180deg, #ff9800, #ff5722);
+            color: #fffaf0;
+          "
+          class="menu w3-right w3-button"
+          id="menu-list"
+        >
+          <li><a href="#about">LỊCH SỬ HÌNH THÀNH</a></li>
+          <li><a href="#menu">ĐỊA LÝ</a></li>
+          <li><a href="#khihau">KHÍ HẬU</a></li>
+          <li><a href="#DIEUKIENTUNHIEN">ĐIỀU KIỆN TỰ NHIÊN</a></li>
+          <li>
+            <a href="#THOITIET">DỰ BÁO THỜI TIẾT TRONG TỈNH</a>
+          </li>
+          <li><a href="#contact">DÂN CƯ</a></li>
+          <li><a href="#VANHOA">VĂN HOÁ</a></li>
+          <li><a href="#DITICH">DI TÍCH, DI SẢN VĂN HOÁ</a></li>
+          <li><a href="#GIAODUC">GIÁO DỤC</a></li>
+          <li><a href="#KINHTE">KINH TẾ</a></li>
+          <li><a href="#AMTHUC">ẨM THỰC</a></li>
+          <li><a href="#DULICH">DU LỊCH</a></li>
+          <li><a href="#tiemnang">TIỀM NĂNG PHÁT TRIÊN</a></li>
+          <li>
+            <a href="https://giabao123123.github.io/trochoicamau/">TRÒ CHƠI</a>
+          </li>
+        </ul>
+        <script>
+          const menuLinks = document.querySelectorAll("#menu-list a");
+          const menuToggle = document.getElementById("menu-toggle");
+          menuLinks.forEach((link) => {
+            link.addEventListener("click", () => {
+              if (window.innerWidth <= 768) {
+                menuToggle.checked = false;
+              }
+            });
+          });
+        </script>
+
+        <nav
+          style="
+            background: linear-gradient(180deg, #ff9800, #ff5722);
+            color: #fff3cd;
+          "
+          class="w3-animate-left w3-hide-small neon-box"
+        >
+          <div class="menu-scroll">
+            <a href="#about" class="w3-bar-item w3-button"
+              >LỊCH SỬ HÌNH THÀNH</a
+            >
+            <a href="#menu" class="w3-bar-item w3-button">ĐỊA LÝ</a>
+            <a href="#DIEUKIENTUNHIEN" class="w3-bar-item w3-button"
+              >ĐIỀU KIỆN TỰ NHIÊN</a
+            >
+            <a href="#khihau" class="w3-bar-item w3-button">KHÍ HẬU</a>
+            <a href="#THOITIET" class="w3-bar-item w3-button"
+              >DỰ BÁO THỜI TIẾT TRONG TỈNH</a
+            >
+            <a href="#contact" class="w3-bar-item w3-button">DÂN CƯ</a>
+            <a href="#VANHOA" class="w3-bar-item w3-button">VĂN HOÁ</a>
+            <a href="#DITICH" class="w3-bar-item w3-button"
+              >DI TÍCH, DI SẢN VĂN HOÁ</a
+            >
+            <a href="#GIAODUC" class="w3-bar-item w3-button">GIÁO DỤC</a>
+            <a href="#KINHTE" class="w3-bar-item w3-button">KINH TẾ</a>
+            <a href="#AMTHUC" class="w3-bar-item w3-button">ẨM THỰC</a>
+            <a href="#DULICH" class="w3-bar-item w3-button">DU LỊCH</a>
+            <a href="#tiemnang" class="w3-bar-item w3-button"
+              >TIỀM NĂNG PHÁT TRIÊN</a
+            >
+            <a
+              href="https://giabao123123.github.io/trochoicamau/"
+              class="w3-bar-item w3-button"
+              >TRÒ CHƠI</a
+            >
+          </div>
+        </nav>
+      </nav>
+    </header>
+    <script>
+      const menuScroll = document.querySelector(".menu-scroll");
+      const btnLeft = document.querySelector(".left-btn");
+      const btnRight = document.querySelector(".right-btn");
+      const step = 200;
+      if (btnRight && btnLeft && menuScroll) {
+        btnRight.addEventListener("click", () => {
+          menuScroll.scrollLeft += step;
+        });
+        btnLeft.addEventListener("click", () => {
+          menuScroll.scrollLeft -= step;
+        });
+      }
+    </script>
+
+    <main class="w3-content" style="max-width: 1100px">
+      <section class="w3-row w3-padding-16 w3-center" id="about">
+        <h1 class="w3-center" style="color: red; font-size: 35px">
+          LỊCH SỬ HÌNH THÀNH
+        </h1>
+        <article>
+          <p class="w3-large">
+            Cà Mau là vùng đất trẻ, được khai phá khoảng hơn 300 năm trước bởi
+            Mạc Cửu và người Hoa. Sau khi thần phục nhà Nguyễn, con trai Mạc Cửu
+            là Mạc Thiên Tứ lập đạo Long Xuyên, sau đổi thành huyện Long Xuyên
+            và được quản lý theo hệ thống quan tri của nhà Nguyễn. Thời Pháp
+            thuộc, Cà Mau nhiều lần thay đổi hành chính, từ hạt, đại lý lên quận
+            trực thuộc tỉnh Bạc Liêu, trước khi hợp nhất các quận thành quận Cà
+            Mau. Sau năm 1956, Việt Nam Cộng hòa thành lập tỉnh Cà Mau (sau đổi
+            tên An Xuyên), nhưng chính quyền Cách mạng vẫn gọi là Cà Mau. Sau
+            1975, tỉnh trải qua nhiều lần hợp nhất và tách ra, từ Bạc Liêu – Cà
+            Mau, đổi tên Minh Hải, đến năm 1997 mới tái lập tỉnh Cà Mau với
+            thành phố Cà Mau làm tỉnh lỵ và các huyện. Năm 2025, sau khi sáp
+            nhập Bạc Liêu, Cà Mau có diện tích 7.942 km², dân số hơn 2,6 triệu
+            người, gồm 1 thành phố, 9 phường và 55 xã.
+          </p>
+          <p style="font-size: 15px" class="w3-col">
+            (nguồn thông tin:
+            <a href="https://vi.wikipedia.org/wiki/C%C3%A0_Mau" target="_blank"
+              >wiki Cà Mau</a
+            >
+            )
+          </p>
+        </article>
+        <figure>
+          <img
+            src="https://ktck.1cdn.vn/2025/07/01/ca-mau-sap-nhap.jpg"
+            alt="Sáp nhập Cà Mau"
+          />
+          <figcaption style="font-size: 15px">
+            (nguồn hình ảnh:
+            <a
+              href="https://kinhtechungkhoan.vn/sau-sap-nhap-tinh-ca-mau-moi-co-them-mot-thu-phu-dac-biet-la-yeu-to-de-nen-kinh-te-phat-trien-trong-tuong-lai-1388220.html"
+              target="_blank"
+              >kinhtechungkhoan.vn</a
+            >
+            )
+          </figcaption>
+        </figure>
+      </section>
+      <hr />
+
+      <section class="w3-row-padding w3-padding-16" id="menu">
+        <h1 class="w3-padding-16 w3-center" style="color: red; font-size: 50px">
+          ĐỊA LÝ
+        </h1>
+        <article>
+          <p>
+            -Tỉnh Cà Mau là mảnh đất tận cùng của tổ quốc với 3 mặt tiếp giáp
+            với biển, cách thành phố Cần Thơ 180 km, cách Thành phố Hồ Chí Minh
+            350 km. -Thành phố Cà Mau nằm trên trục đường Quốc lộ 1 và quốc lộ
+            63. Là tỉnh nằm trong Vùng kinh tế trọng điểm vùng đồng bằng sông
+            Cửu Long. Đường bờ biển của tỉnh Cà Mau có độ dài gần 310 km (dài
+            thứ 2 cả nước), trong đó có 163 km bờ Biển Đông và 147 km bờ Biển
+            Tây. Biển Cà Mau tiếp giáp với vùng biển các nước như Thái Lan,
+            Malaysia, Indonesia và là trung tâm của vùng biển quốc tế ở Đông Nam
+            Á.
+          </p>
+          <p><b>-Điểm cực của tỉnh:</b></p>
+          <ul>
+            <li>
+              <p>
+                Điểm cực Bắc: xã Vĩnh Thịnh, huyện Hòa Bình – khoảng 9°42′B,
+                105°18′Đ.
+              </p>
+            </li>
+            <li>
+              <p>
+                Điểm cực Nam: mũi Cà Mau, xã Đất Mũi, huyện Ngọc Hiển – khoảng
+                8°32′B, 104°45′Đ.
+              </p>
+            </li>
+            <li>
+              <p>
+                Điểm cực Tây: xã Phú Thuận, huyện Phú Tân – khoảng 9°02′B,
+                104°45′Đ.
+              </p>
+            </li>
+            <li>
+              <p>
+                Điểm cực Đông: xã Tân Ân, huyện Ngọc Hiển – khoảng 8°45′B,
+                105°30′Đ.
+              </p>
+            </li>
+          </ul>
+          <p>
+            Lưu ý: 3 điểm cực Bắc, Tây, Đông chưa được công bố chính thức tọa
+            độ; đây là ước lượng dựa trên bản đồ hành chính mới nhất.
+          </p>
+          <p><b>-Tiếp giáp:</b></p>
+          <ul>
+            <li><p>Phía đông giáp Biển Đông với đường bờ biển 163 km.</p></li>
+            <li>
+              <p>
+                Phía tây và phía nam giáp Vịnh Thái Lan với đường bờ biển 147
+                km.
+              </p>
+            </li>
+            <li><p>Phía bắc giáp thành phố Cần Thơ và tỉnh An Giang.</p></li>
+          </ul>
+          <p style="font-size: 15px">
+            (nguồn thông tin:
+            <a href="https://vi.wikipedia.org/wiki/C%C3%A0_Mau" target="_blank"
+              >wiki Cà Mau</a
+            >
+            <br />
+            <a
+              href="https://thanhnien.vn/cac-diem-cuc-viet-nam-ky-2-mui-ca-mau-cuc-nam-dat-lien-1851476582.html"
+              target="_blank"
+              >thanhnien.vn</a
+            >
+            )
+          </p>
+        </article>
+        <figure class="w3-center">
+          <img
+            src="https://cdn.thuvienphapluat.vn/uploads/nhadat/2025/NTTU/03072025/ban-do-ca-mau.jpg"
+            class="w3-round w3-image w3-opacity-min w3-center"
+            alt="Bản đồ Cà Mau"
+            style="width: 75%"
+          />
+          <div class="text-overlay"></div>
+          <figcaption style="font-size: 15px">
+            (nguồn hình ảnh:
+            <a
+              href="https://thuvienphapluat.vn/phap-luat-nha-dat/moi-nhat-ban-do-hanh-chinh-ca-mau-sau-sap-nhap-chi-tiet-nhat-danh-sach-day-du-xa-phuong-moi-cua-ca--5228.html"
+              target="_blank"
+              >thuvienphapluat.vn</a
+            >
+            )
+          </figcaption>
+        </figure>
+      </section>
+      <hr />
+
+      <section class="w3-row w3-padding-16" id="DIEUKIENTUNHIEN">
+        <h1 class="w3-center" style="font-size: 50px">ĐIỀU KIỆN TỰ NHIÊN</h1>
+        <article>
+          <p>
+            -Cà Mau là vùng đất thấp, khu vực phía Nam thường xuyên bị ngập
+            nước, với 5 nhóm đất chính gồm: đất phèn, đất than bùn, đất bãi bồi,
+            đất mặn và đất kênh rạch. Rừng Cà Mau có hai loại hình sinh thái
+            chính: rừng ngập mặn ven biển dài 310 km và rừng tràm nội địa ở các
+            huyện U Minh, Trần Văn Thời, Thới Bình với diện tích khoảng 35.000
+            ha. Rừng ngập mặn ở Cà Mau chiếm 77% tổng diện tích rừng ngập mặn
+            của đồng bằng sông Cửu Long. Khí hậu tỉnh mang đặc trưng nhiệt đới
+            gió mùa cận xích đạo, chia thành mùa mưa (tháng 5–11) và mùa khô
+            (tháng 12–4), với lượng mưa trung bình 2.360 mm/năm, 165 ngày mưa,
+            độ ẩm trung bình 85,6%. Nhiệt độ trung bình năm là 26,5°C, cao nhất
+            vào tháng 4 khoảng 27,6°C, thấp nhất vào tháng 1 khoảng 25°C, từng
+            ghi nhận thấp nhất 18–20°C và cao nhất 38°C.
+          </p>
+          <p style="font-size: 15px">
+            (nguồn thông tin:
+            <a href="https://vi.wikipedia.org/wiki/C%C3%A0_Mau" target="_blank"
+              >wiki Cà Mau</a
+            >)
+          </p>
+        </article>
+      </section>
+      <hr />
+
+      <section
+        class="w3-container w3-padding-16 table-responsive"
+        style="overflow-x: auto"
+        id="khihau"
+      >
+        <h1 style="font-size: 50px" class="w3-center">KHÍ HẬU</h1>
+        <br />
+        <article>
+          <p>
+            Cà Mau là tỉnh đồng bằng ven biển, nằm trong khu vực nội chí tuyến
+            bắc bán cầu, cận xích đạo; đồng thời, nằm trong khu vực gió mùa châu
+            Á nên khí hậu Cà Mau ôn hoà thuộc vùng cận xích đạo, nhiệt đới gió
+            mùa, có 2 mùa mưa nắng rõ rệt: Mùa Mưa và mùa khô.
+          </p>
+
+          <table
+            style="
+              width: 100%;
+              border-color: rgb(162, 169, 177);
+              background-color: rgb(234, 236, 240);
+            "
+          >
+            <tr>
+              <th colspan="14" style="font-size: x-large">
+                Dữ liệu khí hậu của Cà Mau
+              </th>
+            </tr>
+            <tr>
+              <th>Tháng</th>
+              <th>1</th>
+              <th>2</th>
+              <th>3</th>
+              <th>4</th>
+              <th>5</th>
+              <th>6</th>
+              <th>7</th>
+              <th>8</th>
+              <th>9</th>
+              <th>10</th>
+              <th>11</th>
+              <th>12</th>
+              <th>Năm</th>
+            </tr>
+            <tr>
+              <th>Trung bình ngày tối đa °C (°F)</th>
+              <td style="background: #ff4900; color: #000000">31 (87.8)</td>
+              <td style="background: #ff4300; color: #000000">31.5 (88.7)</td>
+              <td style="background: #ff4000; color: #000000">32 (89.6)</td>
+              <td style="background: #ff3a00; color: #000000">33 (91.4)</td>
+              <td style="background: #ff3a00; color: #000000">33 (91.4)</td>
+              <td style="background: #ff3c00; color: #000000">32.5 (90.5)</td>
+              <td style="background: #ff3d00; color: #000000">32.3 (90.1)</td>
+              <td style="background: #ff3e00; color: #000000">32.2 (90)</td>
+              <td style="background: #ff4100; color: #000000">31.8 (89.2)</td>
+              <td style="background: #ff4400; color: #000000">31.4 (88.5)</td>
+              <td style="background: #ff4600; color: #000000">31.2 (88.2)</td>
+              <td style="background: #ff4a00; color: #000000">30.8 (87.4)</td>
+              <td style="background: #ff4000; color: #000000">32 (89.6)</td>
+            </tr>
+            <tr>
+              <th>Trung bình ngày °C (°F)</th>
+              <td style="background: #ff6800; color: #000000">26 (78.8)</td>
+              <td style="background: #ff6300; color: #000000">26.5 (79.7)</td>
+              <td style="background: #ff5100; color: #000000">27.5 (81.5)</td>
+              <td style="background: #ff4800; color: #000000">28 (82.4)</td>
+              <td style="background: #ff4800; color: #000000">28 (82.4)</td>
+              <td style="background: #ff5100; color: #000000">27.5 (81.5)</td>
+              <td style="background: #ff5300; color: #000000">27.3 (81.1)</td>
+              <td style="background: #ff5400; color: #000000">27.2 (81)</td>
+              <td style="background: #ff5700; color: #000000">27 (80.6)</td>
+              <td style="background: #ff5900; color: #000000">26.8 (80.2)</td>
+              <td style="background: #ff6300; color: #000000">26.5 (79.7)</td>
+              <td style="background: #ff6600; color: #000000">26.2 (79.2)</td>
+              <td style="background: #ff5400; color: #000000">27.2 (81)</td>
+            </tr>
+            <tr>
+              <th>Tối thiểu trung bình ngày °C (°F)</th>
+              <td style="background: #ff8000; color: #000000">22.5 (72.5)</td>
+              <td style="background: #ff7b00; color: #000000">23 (73.4)</td>
+              <td style="background: #ff7600; color: #000000">24 (75.2)</td>
+              <td style="background: #ff6f00; color: #000000">25 (77)</td>
+              <td style="background: #ff6e00; color: #000000">25.2 (77.4)</td>
+              <td style="background: #ff6f00; color: #000000">25 (77)</td>
+              <td style="background: #ff7000; color: #000000">24.8 (76.6)</td>
+              <td style="background: #ff7000; color: #000000">24.8 (76.6)</td>
+              <td style="background: #ff7300; color: #000000">24.5 (76.1)</td>
+              <td style="background: #ff7500; color: #000000">24.2 (75.6)</td>
+              <td style="background: #ff7900; color: #000000">23.8 (74.8)</td>
+              <td style="background: #ff7d00; color: #000000">22.8 (73)</td>
+              <td style="background: #ff7400; color: #000000">24.4 (75.9)</td>
+            </tr>
+            <tr>
+              <th>Lượng mưa trung bình mm (inches)</th>
+              <td style="background: #e8ffe8; color: #000000">15 (0.6)</td>
+              <td style="background: #dfffff; color: #000000">20 (0.8)</td>
+              <td style="background: #afffff; color: #000000">50 (2)</td>
+              <td style="background: #62ff62; color: #000000">100 (3.9)</td>
+              <td style="background: #00bf00; color: #ffffff">220 (8.7)</td>
+              <td style="background: #007400; color: #ffffff">260 (10.2)</td>
+              <td style="background: #004d00; color: #ffffff">300 (11.8)</td>
+              <td style="background: #003000; color: #ffffff">320 (12.6)</td>
+              <td style="background: #007400; color: #ffffff">260 (10.2)</td>
+              <td style="background: #00bf00; color: #000000">180 (7.1)</td>
+              <td style="background: #89ff89; color: #000000">70 (2.8)</td>
+              <td style="background: #ccffcc; color: #000000">30 (1.2)</td>
+              <td style="background: #003000; color: #ffffff">1.800 (70.9)</td>
+            </tr>
+            <tr>
+              <th>Số ngày mưa trung bình</th>
+              <td style="background: #e1e1ff; color: #000000">3</td>
+              <td style="background: #e1e1ff; color: #000000">3</td>
+              <td style="background: #cfcfff; color: #000000">6</td>
+              <td style="background: #9797ff; color: #000000">10</td>
+              <td style="background: #3636ff; color: #ffffff">18</td>
+              <td style="background: #1111ff; color: #ffffff">20</td>
+              <td style="background: #0000ff; color: #ffffff">23</td>
+              <td style="background: #0000ff; color: #ffffff">25</td>
+              <td style="background: #1111ff; color: #ffffff">20</td>
+              <td style="background: #6868ff; color: #000000">14</td>
+              <td style="background: #c2c2ff; color: #000000">7</td>
+              <td style="background: #d6d6ff; color: #000000">4</td>
+              <td style="background: #0000ff; color: #ffffff">150</td>
+            </tr>
+            <tr>
+              <th>Độ ẩm tương đối trung bình (%)</th>
+              <td style="background: #0000ff; color: #ffffff">72</td>
+              <td style="background: #0000ff; color: #ffffff">73</td>
+              <td style="background: #0000ff; color: #ffffff">75</td>
+              <td style="background: #0000ff; color: #ffffff">78</td>
+              <td style="background: #0000b2; color: #ffffff">82</td>
+              <td style="background: #000078; color: #ffffff">85</td>
+              <td style="background: #000063; color: #ffffff">86</td>
+              <td style="background: #00004d; color: #ffffff">87</td>
+              <td style="background: #000078; color: #ffffff">85</td>
+              <td style="background: #0000b2; color: #ffffff">82</td>
+              <td style="background: #0000ff; color: #ffffff">78</td>
+              <td style="background: #0000ff; color: #ffffff">75</td>
+              <td style="background: #0000e2; color: #ffffff">80</td>
+            </tr>
+          </table>
+
+          <p>
+            <strong>Lưu ý:</strong> Các giá trị trong bảng là ước lượng trung
+            bình
+          </p>
+          <p style="font-size: 15px">
+            (nguồn thông tin:
+            <a href="https://vi.wikipedia.org/wiki/Cà_Mau" target="_blank"
+              >wiki Cà Mau</a
+            ><br />
+            <a href="https://nchmf.gov.vn" target="_blank">nchmf.gov.vn</a
+            ><br />
+            <a
+              href="https://camau.gov.vn/dieu-kien-tu-nhien/khi-hau-239267"
+              target="_blank"
+              >camau.gov.vn</a
+            ><br />
+            Bản đồ khí hậu và số liệu khảo sát vùng Đồng bằng sông Cửu Long,
+            Viện Khoa học Nông nghiệp Việt Nam, 2024.)
+          </p>
+        </article>
+      </section>
+      <hr />
+      <section class="w3-row-padding w3-padding-16" id="THOITIET">
+        <h1 class="w3-padding-16" style="color: red; font-size: 50px">
+          DỰ BÁO THỜI TIẾT TRONG TỈNH
+        </h1>
+        <div
+          style="
+            max-width: 760px;
+            margin: 0 auto;
+            font-family: &quot;Montserrat&quot;, Arial, sans-serif;
+          "
+        >
+          <h2
+            class="section-title"
+            style="text-align: center; color: #0a3d2e; margin-bottom: 6px"
+          >
+            🌤 Dự Báo Thời Tiết
+          </h2>
+          <p
+            style="
+              text-align: center;
+              color: #666;
+              font-size: 14px;
+              margin-bottom: 20px;
+            "
+          >
+            Gõ tên xã / phường / thị trấn để xem dự báo thời tiết
+          </p>
+
+          <div
+            style="position: relative; max-width: 440px; margin: 0 auto 22px"
+          >
+            <span
+              style="
+                position: absolute;
+                left: 14px;
+                top: 50%;
+                transform: translateY(-50%);
+                font-size: 17px;
+                pointer-events: none;
+              "
+              >🔍</span
+            >
+            <input
+              type="text"
+              id="tt-input"
+              placeholder="Gõ tên xã, phường, thị trấn..."
+              oninput="ttFilter()"
+              onfocus="ttShow()"
+              autocomplete="off"
+              style="
+                width: 100%;
+                padding: 13px 14px 13px 42px;
+                font-size: 15px;
+                border-radius: 10px;
+                border: 2px solid #0a3d2e;
+                color: #333;
+                background: #fff;
+                font-family: inherit;
+                outline: none;
+                box-sizing: border-box;
+              "
+            />
+            <div
+              id="tt-drop"
+              style="
+                display: none;
+                position: absolute;
+                top: calc(100% + 4px);
+                left: 0;
+                right: 0;
+                background: #fff;
+                border: 2px solid #0a3d2e;
+                border-radius: 10px;
+                max-height: 250px;
+                overflow-y: auto;
+                z-index: 9999;
+                box-shadow: 0 8px 24px rgba(0, 0, 0, 0.13);
+              "
+            ></div>
+          </div>
+
+          <div
+            id="tt-box"
+            style="
+              display: none;
+              border-radius: 14px;
+              overflow: hidden;
+              box-shadow: 0 4px 20px rgba(0, 0, 0, 0.12);
+            "
+          >
+            <div
+              style="
+                background: #0a3d2e;
+                color: #fff;
+                padding: 12px 20px;
+                font-size: 15px;
+                font-weight: 600;
+              "
+            >
+              📍 Thời tiết: <span id="tt-name"></span>
+            </div>
+            <div id="tt-widget-wrap" style="background: #fff"></div>
+            <div
+              id="tt-noembed"
+              style="
+                display: none;
+                padding: 24px;
+                text-align: center;
+                background: #fff;
+              "
+            >
+              <p style="color: #888; font-size: 14px">
+                ⚙️ Khu vực này chưa có dữ liệu.
+              </p>
+            </div>
+          </div>
+        </div>
+
+        <script>
+          var TT_AREAS = [
+            {
+              name: "Huyện Cái Nước",
+              parent: "Tỉnh Cà Mau cũ",
+              widget: `<!--Begin thoitiet.app widget --><iframe src="https://thoitiet247.vn/widget/embed/ca-mau/cai-nuoc?style=2&day=7&td=%23ffffff&ntd=%231c84ee&mvb=%23848484&mv=%231c84ee&mdk=%23dddddd&htd=true" id="widgeturl" width="100%" height="550px" scrolling="no" frameborder="0" allowtransparency="true" style="border:none;overflow:hidden;"></iframe><!-- End thoitiet.app widget -->`,
+            },
+            {
+              name: "Huyện Phú Tân",
+              parent: "Tỉnh Cà Mau cũ",
+              widget: `<!--Begin thoitiet.app widget --><iframe src="https://thoitiet247.vn/widget/embed/ca-mau/phu-tan-ca-mau?style=2&day=7&td=%23ffffff&ntd=%231c84ee&mvb=%23848484&mv=%231c84ee&mdk=%23dddddd&htd=true" id="widgeturl" width="100%" height="550px" scrolling="no" frameborder="0" allowtransparency="true" style="border:none;overflow:hidden;"></iframe><!-- End thoitiet.app widget -->`,
+            },
+            {
+              name: "Huyện Thới Bình",
+              parent: "Tỉnh Cà Mau cũ",
+              widget: `<!--Begin thoitiet.app widget --><iframe src="https://thoitiet247.vn/widget/embed/ca-mau/thoi-binh?style=2&day=7&td=%23ffffff&ntd=%231c84ee&mvb=%23848484&mv=%231c84ee&mdk=%23dddddd&htd=true" id="widgeturl" width="100%" height="550px" scrolling="no" frameborder="0" allowtransparency="true" style="border:none;overflow:hidden;"></iframe><!-- End thoitiet.app widget -->`,
+            },
+            {
+              name: "Huyện Trần Văn Thời",
+              parent: "Tỉnh Cà Mau cũ",
+              widget: `<!--Begin thoitiet.app widget --><iframe src="https://thoitiet247.vn/widget/embed/ca-mau/tran-van-thoi?style=2&day=7&td=%23ffffff&ntd=%231c84ee&mvb=%23848484&mv=%231c84ee&mdk=%23dddddd&htd=true" id="widgeturl" width="100%" height="550px" scrolling="no" frameborder="0" allowtransparency="true" style="border:none;overflow:hidden;"></iframe><!-- End thoitiet.app widget -->`,
+            },
+            {
+              name: "Huyện U Minh",
+              parent: "Tỉnh Cà Mau cũ",
+              widget: `<!--Begin thoitiet.app widget --><iframe src="https://thoitiet247.vn/widget/embed/ca-mau/u-minh?style=2&day=7&td=%23ffffff&ntd=%231c84ee&mvb=%23848484&mv=%231c84ee&mdk=%23dddddd&htd=true" id="widgeturl" width="100%" height="550px" scrolling="no" frameborder="0" allowtransparency="true" style="border:none;overflow:hidden;"></iframe><!-- End thoitiet.app widget -->`,
+            },
+            {
+              name: "Huyện Ngọc Hiển",
+              parent: "Tỉnh Cà Mau cũ",
+              widget: `<!--Begin thoitiet.app widget --><iframe src="https://thoitiet247.vn/widget/embed/ca-mau/ngoc-hien?style=2&day=7&td=%23ffffff&ntd=%231c84ee&mvb=%23848484&mv=%231c84ee&mdk=%23dddddd&htd=true" id="widgeturl" width="100%" height="550px" scrolling="no" frameborder="0" allowtransparency="true" style="border:none;overflow:hidden;"></iframe><!-- End thoitiet.app widget -->`,
+            },
+            {
+              name: "Huyện Năm Căn",
+              parent: "Tỉnh Cà Mau cũ",
+              widget: `<!--Begin thoitiet.app widget --><iframe src="https://thoitiet247.vn/widget/embed/ca-mau/nam-can?style=2&day=7&td=%23ffffff&ntd=%231c84ee&mvb=%23848484&mv=%231c84ee&mdk=%23dddddd&htd=true" id="widgeturl" width="100%" height="550px" scrolling="no" frameborder="0" allowtransparency="true" style="border:none;overflow:hidden;"></iframe><!-- End thoitiet.app widget -->`,
+            },
+            {
+              name: "Huyện Đầm Dơi",
+              parent: "Tỉnh Cà Mau cũ",
+              widget: `<!--Begin thoitiet.app widget --><iframe src="https://thoitiet247.vn/widget/embed/ca-mau/dam-doi?style=2&day=7&td=%23ffffff&ntd=%231c84ee&mvb=%23848484&mv=%231c84ee&mdk=%23dddddd&htd=true" id="widgeturl" width="100%" height="550px" scrolling="no" frameborder="0" allowtransparency="true" style="border:none;overflow:hidden;"></iframe><!-- End thoitiet.app widget -->`,
+            },
+            {
+              name: "Thành phố Cà Mau",
+              parent: "Tỉnh Cà Mau cũ",
+              widget: `<!--Begin thoitiet.app widget --><iframe src="https://thoitiet247.vn/widget/embed/ca-mau/ca-mau?style=2&day=7&td=%23ffffff&ntd=%231c84ee&mvb=%23848484&mv=%231c84ee&mdk=%23dddddd&htd=true" id="widgeturl" width="100%" height="550px" scrolling="no" frameborder="0" allowtransparency="true" style="border:none;overflow:hidden;"></iframe><!-- End thoitiet.app widget -->`,
+            },
+
+            {
+              name: "Thành phố Bạc Liêu",
+              parent: "Tỉnh Bạc Liêu cũ",
+              widget: `<!--Begin thoitiet.app widget --><iframe src="https://thoitiet247.vn/widget/embed/bac-lieu/bac-lieu?style=2&day=7&td=%23ffffff&ntd=%231c84ee&mvb=%23848484&mv=%231c84ee&mdk=%23dddddd&htd=true" id="widgeturl" width="100%" height="550px" scrolling="no" frameborder="0" allowtransparency="true" style="border:none;overflow:hidden;"></iframe><!-- End thoitiet.app widget -->`,
+            },
+            {
+              name: "Huyện Đông Hải",
+              parent: "Tỉnh Bạc Liêu cũ",
+              widget: `<!--Begin thoitiet.app widget --><iframe src="https://thoitiet247.vn/widget/embed/bac-lieu/dong-hai?style=2&day=7&td=%23ffffff&ntd=%231c84ee&mvb=%23848484&mv=%231c84ee&mdk=%23dddddd&htd=true" id="widgeturl" width="100%" height="550px" scrolling="no" frameborder="0" allowtransparency="true" style="border:none;overflow:hidden;"></iframe><!-- End thoitiet.app widget -->`,
+            },
+            {
+              name: "Huyện Hòa Bình",
+              parent: "Tỉnh Bạc Liêu cũ",
+              widget: `<!--Begin thoitiet.app widget --><iframe src="https://thoitiet247.vn/widget/embed/bac-lieu/hoa-binh?style=2&day=7&td=%23ffffff&ntd=%231c84ee&mvb=%23848484&mv=%231c84ee&mdk=%23dddddd&htd=true" id="widgeturl" width="100%" height="550px" scrolling="no" frameborder="0" allowtransparency="true" style="border:none;overflow:hidden;"></iframe><!-- End thoitiet.app widget -->`,
+            },
+            {
+              name: "Huyện Hồng Dân",
+              parent: "Tỉnh Bạc Liêu cũ",
+              widget: `<!--Begin thoitiet.app widget --><iframe src="https://thoitiet247.vn/widget/embed/bac-lieu/hong-dan?style=2&day=7&td=%23ffffff&ntd=%231c84ee&mvb=%23848484&mv=%231c84ee&mdk=%23dddddd&htd=true" id="widgeturl" width="100%" height="550px" scrolling="no" frameborder="0" allowtransparency="true" style="border:none;overflow:hidden;"></iframe><!-- End thoitiet.app widget -->`,
+            },
+            {
+              name: "Huyện 	Phước Long",
+              parent: "Tỉnh Bạc Liêu cũ",
+              widget: `<!--Begin thoitiet.app widget --><iframe src="https://thoitiet247.vn/widget/embed/bac-lieu/phuoc-long?style=2&day=7&td=%23ffffff&ntd=%231c84ee&mvb=%23848484&mv=%231c84ee&mdk=%23dddddd&htd=true" id="widgeturl" width="100%" height="550px" scrolling="no" frameborder="0" allowtransparency="true" style="border:none;overflow:hidden;"></iframe><!-- End thoitiet.app widget -->`,
+            },
+            {
+              name: "Huyện Vĩnh Lợi",
+              parent: "Tỉnh Bạc Liêu cũ",
+              widget: `<!--Begin thoitiet.app widget --><iframe src="https://thoitiet247.vn/widget/embed/bac-lieu/vinh-loi?style=2&day=7&td=%23ffffff&ntd=%231c84ee&mvb=%23848484&mv=%231c84ee&mdk=%23dddddd&htd=true" id="widgeturl" width="100%" height="550px" scrolling="no" frameborder="0" allowtransparency="true" style="border:none;overflow:hidden;"></iframe><!-- End thoitiet.app widget -->`,
+            },
+            {
+              name: "Thị xã Giá Rai",
+              parent: "Tỉnh Bạc Liêu cũ",
+              widget: `<!--Begin thoitiet.app widget --><iframe src="https://thoitiet247.vn/widget/embed/bac-lieu/gia-rai?style=2&day=7&td=%23ffffff&ntd=%231c84ee&mvb=%23848484&mv=%231c84ee&mdk=%23dddddd&htd=true" id="widgeturl" width="100%" height="550px" scrolling="no" frameborder="0" allowtransparency="true" style="border:none;overflow:hidden;"></iframe><!-- End thoitiet.app widget -->`,
+            },
+          ];
+          function ttNorm(s) {
+            return s
+              .toLowerCase()
+              .normalize("NFD")
+              .replace(/[\u0300-\u036f]/g, "")
+              .replace(/đ/g, "d");
+          }
+
+          var ttFiltered = TT_AREAS.slice();
+
+          function ttFilter() {
+            var q = ttNorm(document.getElementById("tt-input").value.trim());
+            ttFiltered = q
+              ? TT_AREAS.filter(function (a) {
+                  return ttNorm(a.name).indexOf(q) !== -1;
+                })
+              : TT_AREAS.slice();
+            ttRender();
+            document.getElementById("tt-drop").style.display = "block";
+          }
+
+          function ttShow() {
+            ttFiltered = TT_AREAS.slice();
+            ttRender();
+            document.getElementById("tt-drop").style.display = "block";
+          }
+
+          function ttRender() {
+            var dd = document.getElementById("tt-drop");
+            if (!ttFiltered.length) {
+              dd.innerHTML =
+                '<div style="padding:14px 18px;color:#999;font-size:14px;">Không tìm thấy</div>';
+              return;
+            }
+            dd.innerHTML = ttFiltered
+              .map(function (a) {
+                var idx = TT_AREAS.indexOf(a);
+                var dot = a.widget.trim()
+                  ? '<span style="color:#27ae60;font-size:10px;margin-left:6px;" title="Đã có widget">●</span>'
+                  : '<span style="color:#ccc;font-size:10px;margin-left:6px;" title="Chưa có widget">●</span>';
+                return (
+                  '<div onclick="ttSelect(' +
+                  idx +
+                  ')"' +
+                  ' style="padding:11px 18px;font-size:14px;cursor:pointer;' +
+                  'border-bottom:1px solid #f5f5f5;display:flex;align-items:center;"' +
+                  " onmouseover=\"this.style.background='#f0f7f4'\"" +
+                  " onmouseout=\"this.style.background='#fff'\">" +
+                  '<span style="color:#0a3d2e;font-weight:600;">' +
+                  a.name +
+                  "</span>" +
+                  dot +
+                  "</div>"
+                );
+              })
+              .join("");
+          }
+
+          function ttSelect(idx) {
+            var a = TT_AREAS[idx];
+            document.getElementById("tt-input").value = a.name;
+            document.getElementById("tt-drop").style.display = "none";
+            var locationTitle = a.name;
+            if (a.parent) {
+              locationTitle += " (" + a.parent + ")";
+            }
+
+            document.getElementById("tt-name").textContent = locationTitle;
+            document.getElementById("tt-box").style.display = "block";
+
+            var wrap = document.getElementById("tt-widget-wrap");
+            var noEmbed = document.getElementById("tt-noembed");
+
+            if (a.widget && a.widget.trim()) {
+              wrap.innerHTML = a.widget;
+              wrap.style.display = "block";
+              noEmbed.style.display = "none";
+            } else {
+              wrap.innerHTML = "";
+              wrap.style.display = "none";
+              noEmbed.style.display = "block";
+            }
+
+            document
+              .getElementById("tt-box")
+              .scrollIntoView({ behavior: "smooth", block: "start" });
+          }
+
+          document.addEventListener("click", function (e) {
+            var inp = document.getElementById("tt-input");
+            var drop = document.getElementById("tt-drop");
+            if (drop && e.target !== inp && !drop.contains(e.target))
+              drop.style.display = "none";
+          });
+        </script>
+      </section>
+      <hr />
+      <section class="w3-row w3-padding-16" id="contact">
+        <h1 class="w3-center" style="font-size: 50px">DÂN CƯ</h1>
+        <article>
+          <table style="width: 100%">
+            <tr>
+              <th>năm</th>
+              <th>số dân</th>
+              <th>±%</th>
+            </tr>
+            <tr>
+              <td>1995</td>
+              <td>1,041,800</td>
+              <td>—</td>
+            </tr>
+            <tr>
+              <td>1996</td>
+              <td>1,061,600</td>
+              <td>+1.9%</td>
+            </tr>
+            <tr>
+              <td>1997</td>
+              <td>1,081,100</td>
+              <td>+1.8%</td>
+            </tr>
+            <tr>
+              <td>1998</td>
+              <td>1,101,800</td>
+              <td>+1.9%</td>
+            </tr>
+            <tr>
+              <td>1999</td>
+              <td>1,123,500</td>
+              <td>+2.0%</td>
+            </tr>
+            <tr>
+              <td>2000</td>
+              <td>1,133,900</td>
+              <td>+0.9%</td>
+            </tr>
+            <tr>
+              <td>2001</td>
+              <td>1,145,200</td>
+              <td>+1.0%</td>
+            </tr>
+            <tr>
+              <td>2002</td>
+              <td>1,155,300</td>
+              <td>+0.9%</td>
+            </tr>
+            <tr>
+              <td>2003</td>
+              <td>1,164,500</td>
+              <td>+0.8%</td>
+            </tr>
+            <tr>
+              <td>2004</td>
+              <td>1,174,400</td>
+              <td>+0.9%</td>
+            </tr>
+            <tr>
+              <td>2005</td>
+              <td>1,182,900</td>
+              <td>+0.7%</td>
+            </tr>
+            <tr>
+              <td>2006</td>
+              <td>1,188,700</td>
+              <td>+0.5%</td>
+            </tr>
+            <tr>
+              <td>2007</td>
+              <td>1,195,200</td>
+              <td>+0.5%</td>
+            </tr>
+            <tr>
+              <td>2008</td>
+              <td>1,201,700</td>
+              <td>+0.5%</td>
+            </tr>
+            <tr>
+              <td>2009</td>
+              <td>1,207,128</td>
+              <td>+0.5%</td>
+            </tr>
+            <tr>
+              <td>2010</td>
+              <td>1,212,089</td>
+              <td>+0.4%</td>
+            </tr>
+            <tr>
+              <td>2011</td>
+              <td>1,215,360</td>
+              <td>+0.3%</td>
+            </tr>
+            <tr>
+              <td>2012</td>
+              <td>1,219,128</td>
+              <td>+0.3%</td>
+            </tr>
+            <tr>
+              <td>2013</td>
+              <td>1,214,200</td>
+              <td>−0.4%</td>
+            </tr>
+            <tr>
+              <td>2014</td>
+              <td>1,216,400</td>
+              <td>+0.2%</td>
+            </tr>
+            <tr>
+              <td>2015</td>
+              <td>1,199,533</td>
+              <td>−1.4%</td>
+            </tr>
+            <tr>
+              <td>2016</td>
+              <td>1,198,120</td>
+              <td>−0.1%</td>
+            </tr>
+            <tr>
+              <td>2017</td>
+              <td>1,196,979</td>
+              <td>−0.1%</td>
+            </tr>
+            <tr>
+              <td>2018</td>
+              <td>1,195,559</td>
+              <td>−0.1%</td>
+            </tr>
+            <tr>
+              <td>2019</td>
+              <td>1,194,476</td>
+              <td>−0.1%</td>
+            </tr>
+            <tr>
+              <td>2020</td>
+              <td>1,193,894</td>
+              <td>−0.0%</td>
+            </tr>
+            <tr>
+              <td>2021</td>
+              <td>1,208,750</td>
+              <td>+1.2%</td>
+            </tr>
+            <tr>
+              <td>2022</td>
+              <td>1,208,752</td>
+              <td>+0.0%</td>
+            </tr>
+            <tr>
+              <td>2023</td>
+              <td>---</td>
+              <td>---</td>
+            </tr>
+            <tr>
+              <td>2024</td>
+              <td>2,606,672</td>
+              <td>+115.6%</td>
+            </tr>
+          </table>
+          <p>
+            <mark><strong>-Cà Mau</strong></mark> là tỉnh có
+            <u>dân số ít nhất</u> trong khu vực Đồng bằng sông Cửu Long. Trong
+            10 năm, <u>dân số giảm 12.462 người</u>, với mức tăng giảm bình quân
+            qua các giai đoạn: 1989–1999 <u>tăng 2,32%/năm</u>; 1999–2009
+            <u>tăng 0,76%/năm</u>; 2009–2019 <u>giảm 0,10%/năm</u>.
+          </p>
+          <p>
+            -Đến đầu năm 2017, dân số Cà Mau chủ yếu là người Kinh với khoảng
+            <u>1.180.000 người</u> (trên 96%), tiếp theo là người Khmer
+            <u>33.439 người</u> (2,73%), người Hoa <u>9.418 người</u> (0,76%),
+            còn lại là các dân tộc khác như Mường, Thái, Tày, Nùng, Gia Rai, Ê
+            Đê, Chăm,...
+          </p>
+          <p>
+            -Đến ngày 01/4/2019, tổng dân số là <u>1.194.476 người</u>, gồm
+            <u>604.901 nam</u> (50,64%) và <u>589.575 nữ</u> (49,36%). Dân số
+            thành thị <u>271.063 người</u> (22,69%), nông thôn
+            <u>923.413 người</u> (77,31%),
+            <u>tỷ lệ đô thị hóa năm 2022 đạt 28,4%</u>. Cơ cấu dân tộc: Kinh
+            <u>1.160.852 người</u> (97,19%), Khmer <u>26.110 người</u> (2,19%),
+            Hoa <u>6.343 người</u> (0,53%), các dân tộc khác
+            <u>1.171 người</u> (0,1%).
+          </p>
+          <p>
+            <mark><strong>-Tôn giáo</strong></mark
+            >: Tổng điều tra 2019 cho thấy có <u>26.356 người</u> theo tôn giáo
+            (2,21%), gồm Công giáo <u>15.421 người</u> (58,51% tín đồ, 1,29% dân
+            số toàn tỉnh), Phật giáo <u>6.795 người</u> (25,78% tín đồ, 0,57%
+            dân số), Cao Đài <u>2.310 người</u> (8,76% tín đồ, 0,19% dân số).
+          </p>
+          <p>
+            <mark><strong>-Mật độ dân số</strong></mark> năm 2019 là
+            <u>229 người/km²</u>, thấp hơn mật độ chung vùng Đồng bằng sông Cửu
+            Long <u>(423 người/km²)</u> và cả nước <u>(290 người/km²)</u>. Thành
+            phố Cà Mau đông nhất với <u>908 người/km²</u>, huyện Ngọc Hiển thấp
+            nhất với <u>94 người/km²</u>.
+            <u>Tỷ số giới tính 102,6 nam/100 nữ</u>.
+          </p>
+          <p>
+            <mark><strong>-Cơ cấu dân số</strong></mark> vàng với
+            <u>68,78% dân số từ 15–64 tuổi</u>,
+            <u>dân số dưới 15 tuổi 23,45%</u>, <u>từ 65 tuổi trở lên 7,7%</u>.
+            <u>Tỷ suất sinh thô 11,2 trẻ/1.000 dân</u>,
+            <u>tỷ số giới tính khi sinh 102 bé trai/100 bé gái</u>.
+            <u>Tuổi thọ trung bình 75,0 tuổi</u> (nam 72,6; nữ 77,5).
+            <u>Tỷ lệ biết chữ từ 15 tuổi trở lên 96,6%</u>,
+            <u>18,2% có trình độ từ trung học phổ thông trở lên</u>.
+          </p>
+          <p>
+            -Sau khi sáp nhập, tỉnh Cà Mau có
+            <u>diện tích tự nhiên 7.942,39 km²</u>,
+            <u>quy mô dân số 2.606.672 người</u>.
+          </p>
+          <p style="font-size: 15px">
+            (nguồn thông tin:
+            <a href="https://vi.wikipedia.org/wiki/C%C3%A0_Mau" target="_blank"
+              >wiki Cà Mau</a
+            >)
+          </p>
+        </article>
+      </section>
+      <hr />
+
+      <section class="w3-row w3-padding-16" id="VANHOA">
+        <h1 class="w3-center" style="font-size: 50px">VĂN HOÁ, LỄ HỘI</h1>
+        <article>
+          <h2 style="font-size: 40px">
+            <strong><mark>VĂN HOÁ:</mark></strong>
+          </h2>
+          <p>
+            <b>- Tôn giáo & tín đồ tại Cà Mau (đầu năm 2017):</b>
+            Tổng số tín đồ: <u>373.327</u> (chiếm <u>30,7%</u> dân số),
+            <u>1.132</u> chức sắc, <u>1.913</u> chức việc. Có <u>142</u> tổ chức
+            tôn giáo cơ sở và <u>134</u> cơ sở thờ tự.
+          </p>
+          <p><b>- Phật giáo:</b></p>
+          <ul>
+            <li>
+              Phật giáo Bắc tông: <u>41</u> cơ sở thờ tự; <u>277.865</u> tín đồ,
+              tu sĩ, chức sắc, chức việc.
+            </li>
+            <li>
+              Phật giáo Hoa Tông: <u>2</u> cơ sở thờ tự; <u>2.180</u> tín đồ, cư
+              sĩ.
+            </li>
+            <li>
+              Phật giáo Nam Tông: <u>7</u> cơ sở thờ tự; <u>25.215</u> tín đồ,
+              sư, chức sắc, chức việc.
+            </li>
+          </ul>
+          <p><b>- Công giáo:</b></p>
+          <ul>
+            <li>19 cơ sở thờ tự; <u>22.360</u> giáo dân, linh mục.</li>
+          </ul>
+          <p><b>- Tin Lành:</b></p>
+          <ul>
+            <li>
+              Tin lành Việt Nam (miền Nam): <u>8</u> cơ sở; <u>4.472</u> tín
+              hữu, mục sư, truyền đạo.
+            </li>
+            <li>
+              Tin lành Baptist VN: <u>34</u> điểm nhóm; <u>1.105</u> tín hữu,
+              mục sư, nữ truyền đạo, chức việc.
+            </li>
+            <li>
+              Tin lành Liên hữu Cơ đốc: 1 điểm nhóm; <u>49</u> tín hữu, mục sư.
+            </li>
+            <li>
+              Tin lành Nhân chứng Giê-hô-va: 1 điểm nhóm; <u>136</u> tín hữu,
+              chức việc.
+            </li>
+            <li>
+              Tin lành Cơ đốc Phục Lâm: 1 điểm nhóm; <u>32</u> tín hữu, chức
+              việc.
+            </li>
+          </ul>
+          <p><b>- Cao Đài:</b></p>
+          <ul>
+            <li>
+              Cao Đài Minh Chơn đạo: <u>23</u> cơ sở thờ tự; <u>13.436</u> nhơn
+              sanh, chức sắc, chức việc.
+            </li>
+            <li>
+              Cao Đài Tây Ninh: <u>9</u> cơ sở thờ tự; <u>13.277</u> nhơn sanh,
+              chức sắc, chức việc.
+            </li>
+            <li>
+              Cao Đài Tiên Thiên: <u>2</u> cơ sở thờ tự; <u>715</u> nhơn sanh,
+              chức sắc, chức việc.
+            </li>
+          </ul>
+          <p><b>- Các tôn giáo khác:</b></p>
+          <ul>
+            <li>
+              Tịnh độ cư sĩ phật hội: <u>22</u> cơ sở thờ tự; <u>14.691</u> tín
+              đồ, chức sắc, chức việc.
+            </li>
+            <li>
+              Phật giáo Hòa Hảo: 1 cơ sở thờ tự; <u>1.056</u> đồng đạo, chức
+              việc.
+            </li>
+          </ul>
+          <p><b>- Hoạt động xã hội:</b></p>
+          <ul>
+            <li>
+              Đồng bào các tôn giáo tham gia từ thiện, hỗ trợ người nghèo dịp
+              lễ, Tết.
+            </li>
+            <li>
+              Xây dựng cầu giao thông nông thôn, khám và phát thuốc miễn phí, hỗ
+              trợ mổ tim cho người nghèo.
+            </li>
+          </ul>
+
+          <h2 style="font-size: 40px">
+            <strong><mark>LỄ HỘI:</mark></strong>
+          </h2>
+          <details>
+            <summary
+              class="w3-bar-item w3-button w3-padding"
+              style="font-size: large"
+            >
+              <strong>-Các lễ hội tiêu biểu của tỉnh Cà Mau:</strong>
+            </summary>
+            <ol>
+              <li>
+                <strong>Lễ hội Nghinh Ông Sông Đốc</strong>
+                <p>
+                  -Nghinh Ông Sông Đốc là lễ hội ở Cà Mau nổi tiếng nhất. Lễ hội
+                  này được cho là có nguồn gốc xuất xứ từ đồng bào người Chăm
+                  tại Campuchia. Tại đất mũi, lễ Nghinh Ông đã được người dân
+                  sinh sống ở vùng ven sông Đốc gìn giữ qua hàng trăm năm và đến
+                  tận ngày nay vẫn duy trì tổ chức vào ngày 14 - 16 tháng 2 âm
+                  lịch hàng năm.
+                  <br />
+                  -Lễ hội diễn ra với nhiều nghi lễ truyền thống đặc sắc: đọc
+                  hương văn tế, lễ bái của học trò, màn rước Cá Ông xuất phát từ
+                  Lăng Ông Nam Hải và diễu hành xung quanh khu vực huyện Trần
+                  Văn Thời… Xuyên suốt thời điểm diễn ra buổi lễ, người dân sẽ
+                  mang các lễ vật như gà vịt, heo quay, trái cây ra trước nhà để
+                  cúng nhằm bày tỏ sự tôn kính với vị thần biển.
+                  <br />
+                  -Bên cạnh các nghi lễ truyền thống thì tại lễ hội cũng tổ chức
+                  rất nhiều trò chơi dân gian thú vị như kéo co, đẩy gậy, bóng
+                  chuyền, bóng đá, đánh cờ tướng… tạo nên bầu không khí vô cùng
+                  rộn ràng, náo nhiệt.
+                </p>
+                <figure>
+                  <img
+                    src="https://dulichvietnam.com.vn/vnt_upload/news/06_2025/le_hoi_o_ca_mau_9.jpg"
+                    class="w3-container"
+                    alt="Lễ hội Nghinh Ông Sông Đốc"
+                  />
+                  <figcaption style="font-size: 15px">
+                    (nguồn thông tin và hình ảnh:
+                    <a
+                      href="https://dulichvietnam.com.vn/le-hoi-o-ca-mau.html"
+                      target="_blank"
+                      >dulichvietnam.com.vn</a
+                    >)
+                  </figcaption>
+                </figure>
+              </li>
+              <li>
+                <strong>Lễ hội Vía Bà Thiên Hậu</strong>
+                <p>
+                  -Vào ngày 23 tháng 3 âm lịch hàng năm, cộng đồng người Hoa cư
+                  trú tại Cà Mau lại tiến hành tổ chức lễ hội Vía Bà Thiên Hậu
+                  nhằm tỏ lòng biết ơn với vị nữ thần cứu nhân độ thế và nguyện
+                  cầu người ban phước lành, sự ấm no cho cuộc sống.
+                  <br />
+                  -Lễ hội ở Cà Mau này sẽ được tổ chức linh đình hàng năm tại
+                  chùa Bà Thiên Hậu Thánh Mẫu. Đây là ngôi chùa được cộng đồng
+                  người Hoa di dân đến lập nghiệp tại Thới Bình xây dựng vào năm
+                  1882. Theo phong tục, trước ngày lễ, người dân sẽ trang hoàng
+                  không gian chùa từ trong ra ngoài vô cùng rực rỡ với điểm nhấn
+                  là sắc đỏ tượng trưng cho sự may mắn.
+                  <br />
+                  -Lễ hội Vía Bà Thiên Hậu có rất nhiều nghi lễ đặc sắc, trong
+                  đó có thể kể đến như Ban Trị Sự đọc bài diễn văn bằng tiếng
+                  Trung Hoa với nội dung ca ngợi công ơn của Bà; dâng hương cùng
+                  mảnh giấy đỏ có viết dòng chữ “tam sinh, ngũ quả”; duy trì
+                  nhang cầu an cháy suốt ngày đêm trong vòng một tháng; các đội
+                  trống chiêng, lân sư diễu hành rộn ràng trên các con đường
+                  trong nội thành Cà Mau.
+                </p>
+                <figure>
+                  <img
+                    src="https://dulichvietnam.com.vn/vnt_upload/news/06_2025/le_hoi_o_ca_mau_1.png"
+                    class="w3-container"
+                    alt="Lễ hội Vía Bà Thiên Hậu"
+                  />
+                  <figcaption style="font-size: 15px">
+                    (nguồn thông tin và hình ảnh:
+                    <a
+                      href="https://dulichvietnam.com.vn/le-hoi-o-ca-mau.html"
+                      target="_blank"
+                      >dulichvietnam.com.vn</a
+                    >)
+                  </figcaption>
+                </figure>
+              </li>
+              <li>
+                <strong>Lễ tế Thần Nông</strong>
+                <p>
+                  -Nhắc đến lễ hội ở Cà Mau, chắc hẳn nhiều người sẽ nghĩ ngay
+                  đến lễ tế Thần Nông thường được tổ chức vào thời điểm mùa xuân
+                  về (khoảng tháng 2 âm lịch).
+                  <br />
+                  -Theo tài liệu lưu lại, tục tế Thần Nông đã có từ rất lâu.
+                  Khoảng năm 1850, các vị vua triều Nguyễn đã ra quy định về tục
+                  tế Thần Nông ở vùng Đồng bằng sông Cửu Long nói chung và Cà
+                  Mau nói riêng. Từ đó, lễ tế thần được duy trì và tổ chức hàng
+                  năm tại đất mũi cho đến tận ngày hôm nay.
+                  <br />
+                  -Trong tín ngưỡng của người bản địa, Thần Nông là người trông
+                  coi nông nghiệp, hỗ trợ nông dân vượt qua những khó khăn trên
+                  đồng ruộng. Do vậy, lễ tế được tổ chức hàng năm nhằm tỏ lòng
+                  biết ơn công lao của thần đồng thời thể hiện mong cầu Quốc
+                  thái dân an, mưa thuận gió hòa, mùa màng bội thu.
+                </p>
+                <figure>
+                  <img
+                    src="https://dulichvietnam.com.vn/vnt_upload/news/06_2025/le_hoi_o_ca_mau_5.png"
+                    class="w3-container"
+                    alt="Lễ tế Thần Nông"
+                  />
+                  <figcaption style="font-size: 15px">
+                    (nguồn thông tin và hình ảnh:
+                    <a
+                      href="https://dulichvietnam.com.vn/le-hoi-o-ca-mau.html"
+                      target="_blank"
+                      >dulichvietnam.com.vn</a
+                    >)
+                  </figcaption>
+                </figure>
+              </li>
+              <li>
+                <strong>Lễ hội Kỳ Yên</strong>
+                <p>
+                  -Đình Tân Lộc là nơi thờ các vị thần (Thành Hoàng Bổn Cảnh) có
+                  công trong việc khẩn hoang, lập ấp, đào kênh, giữ yên bờ cõi.
+                  Tuy nhiên, người dân ở Tân Lộc tin rằng Nguyễn Hữu Cảnh là vị
+                  thần Thành Hoàng của đình nên hiện nay phía bên phải chính
+                  điện có gắn một tấm biển ghi danh tiểu sử và công trạng của
+                  ông.
+                  <br />
+                  -Lễ hội Kỳ Yên (cúng thượng điền, hạ điền) tại đình thần Tân
+                  Lộc được tổ chức vào ngày 16 - 17 tháng 2 âm lịch hàng năm
+                  nhằm tạ ơn các bậc tiền hiền và cầu mong mưa thuận gió hòa,
+                  Quốc thái dân an. Trước ngày diễn ra lễ chính, người dân trong
+                  vùng sẽ tập trung về đình quét dọn, gói bánh tét, xếp những
+                  con “hạc vàng”, làm đài sen dùng cầu an trong lễ hội…
+                  <br />
+                  -Lễ hội được tiến hành trong bầu không khí trang nghiêm với
+                  đầy đủ nghi thức dân gian truyền thống. Đầu tiên là lễ rước
+                  sắc thần từ nhà chánh bái về đình, sau đó đến thủ tục dâng
+                  hương, dâng rượu, dâng trà và đọc bài văn tế. Ngoài ra, theo
+                  tục xưa, trong lễ hội còn có thêm lễ tế Thần Nông, lễ cúng Túc
+                  Yết (lễ tế thần), lễ xây chầu, (lễ đại bội), lễ chánh tế, cúng
+                  binh, khán sắc.
+                </p>
+                <figure>
+                  <img
+                    src="https://dulichvietnam.com.vn/vnt_upload/news/06_2025/le_hoi_o_ca_mau_10.jpg"
+                    class="w3-container"
+                    alt="Lễ hội Kỳ Yên"
+                  />
+                  <figcaption style="font-size: 15px">
+                    (nguồn thông tin và hình ảnh:
+                    <a
+                      href="https://dulichvietnam.com.vn/le-hoi-o-ca-mau.html"
+                      target="_blank"
+                      >dulichvietnam.com.vn</a
+                    >)
+                  </figcaption>
+                </figure>
+              </li>
+              <li>
+                <strong>Lễ Chôl Chnăm Thmây</strong>
+                <p>
+                  -Chắc hẳn nhiều du khách đã từng nghe về Chôl Chnăm Thmây – lễ
+                  hội ở Cà Mau gắn liền với văn hóa tín ngưỡng độc đáo của người
+                  đồng bào Khmer.
+                  <br />
+                  -Lễ Chôl Chnăm Thmây thường tổ chức vào ngày 13 - 15 tháng 4
+                  dương lịch (năm thường) hoặc 13 - 16 tháng 4 dương lịch (năm
+                  nhuận). Theo quan niệm của người Khmer, tháng 4 là thời điểm
+                  chuyển giao giữa mùa nắng và mùa mưa, do đó, lễ hội này ra đời
+                  từ mục đích cầu xin mùa khô nhanh qua để bắt đầu mùa vụ mới.
+                  <br />
+                  -Xuyên suốt ngày hội Chôl Chnăm Thmây sẽ diễn ra rất nhiều
+                  nghi lễ quan trọng như lễ rước Đại lịch (Mahasangkran), lễ
+                  chịu tuổi, dễ dâng cơm, lễ đắp núi cát, lễ tắm tượng Phật và
+                  lễ cầu siêu.
+                </p>
+                <figure>
+                  <img
+                    src="https://dulichvietnam.com.vn/vnt_upload/news/06_2025/le_hoi_o_ca_mau_2.jpg"
+                    class="w3-container"
+                    alt="Lễ Chôl Chnăm Thmây"
+                  />
+                  <figcaption style="font-size: 15px">
+                    (nguồn thông tin và hình ảnh:
+                    <a
+                      href="https://dulichvietnam.com.vn/le-hoi-o-ca-mau.html"
+                      target="_blank"
+                      >dulichvietnam.com.vn</a
+                    >)
+                  </figcaption>
+                </figure>
+              </li>
+            </ol>
+          </details>
+        </article>
+      </section>
+      <hr />
+
+      <section class="w3-row w3-padding-16" id="DITICH">
+        <h1 class="w3-center" style="font-size: 50px">
+          DI TÍCH, DI SẢN VĂN HOÁ
+        </h1>
+        <article>
+          <p>
+            -Sau hợp nhất, tỉnh Cà Mau hiện nay có tổng cộng 111 di tích có giá
+            trị lịch sử, văn hóa, khoa học. Với số lượng này cho thấy sự đa dạng
+            và phong phú của các di sản văn hóa vật thể trên địa bàn tỉnh.
+          </p>
+          <details>
+            <summary
+              class="w3-bar-item w3-button w3-padding"
+              style="font-size: large"
+            >
+              -Một số di tích lịch sử:
+            </summary>
+            <ol>
+              <li>
+                Khu di tích Hòn Đá Bạc<br />
+                -Địa điểm:
+                <a
+                  href="https://www.google.com/maps/search/?api=1&query=5RG6%2BC2M,+987B,+Khánh+Bình+Tây,+Trần+Văn+Thời,+Cà+Mau,+Vietnam"
+                  target="_blank"
+                  >Khánh Bình Tây, Trần Văn Thời, Cà Mau</a
+                ><br />
+                -Loại di tích: Di tích lịch sử-văn hoá<br />
+                <figure>
+                  <img
+                    src="https://sovhttdltuyenquang.vn/wp-content/uploads/2023/12/di-tich-hon-da-bac-ca-mau.jpg"
+                    class="w3-container"
+                    alt="Hòn Đá Bạc"
+                  />
+                  <figcaption style="font-size: 15px" class="w3-animate-left">
+                    (nguồn thông tin và hình ảnh:
+                    <a
+                      href="https://sovhttdltuyenquang.vn/di-tich-lich-su-ca-mau/"
+                      target="_blank"
+                      >sovhttdltuyenquang.vn</a
+                    >)
+                  </figcaption>
+                </figure>
+              </li>
+
+              <li>
+                Di tích đình Tân Hưng<br />
+                -Địa điểm:
+                <a
+                  href="https://www.google.com/maps/search/?api=1&query=44RH%2B7MV,+QL1A,+Lý+Văn+Lâm,+Tp.+Cà+Mau,+Cà+Mau,+Vietnam"
+                  target="_blank"
+                  >Lý Văn Lâm, Tp. Cà Mau, Cà Mau</a
+                ><br />
+                -Loại di tích: Lịch sử-văn hoá<br />
+                <figure>
+                  <img
+                    src="https://sovhttdltuyenquang.vn/wp-content/uploads/2023/12/di-tich-dinh-tan-hung-ca-mau.jpg"
+                    class="w3-container"
+                    alt="Đình Tân Hưng"
+                  />
+                  <figcaption style="font-size: 15px" class="w3-animate-left">
+                    (nguồn thông tin và hình ảnh:
+                    <a
+                      href="https://sovhttdltuyenquang.vn/di-tich-lich-su-ca-mau/"
+                      target="_blank"
+                      >sovhttdltuyenquang.vn</a
+                    >)
+                  </figcaption>
+                </figure>
+              </li>
+
+              <li>
+                Di tích bến Vàm Lũng<br />
+                -Địa điểm:
+                <a
+                  href="https://www.google.com/maps/search/?api=1&query=M345%2BRR9,+Tân+Ân,+Ngọc+Hiển,+Cà+Mau,+Vietnam"
+                  target="_blank"
+                  >Tân Ân, Ngọc Hiển, Cà Mau</a
+                ><br />
+                -Loại di tích: Lịch sử-văn hoá<br />
+                <figure>
+                  <img
+                    src="https://sovhttdltuyenquang.vn/wp-content/uploads/2023/12/di-tich-ben-vam-lung-ca-mau.jpg"
+                    class="w3-container"
+                    alt="Bến Vàm Lũng"
+                  />
+                  <figcaption style="font-size: 15px" class="w3-animate-left">
+                    (nguồn thông tin và hình ảnh:
+                    <a
+                      href="https://sovhttdltuyenquang.vn/di-tich-lich-su-ca-mau/"
+                      target="_blank"
+                      >sovhttdltuyenquang.vn</a
+                    >)
+                  </figcaption>
+                </figure>
+              </li>
+
+              <li>
+                Di tích chùa Cao Dân<br />
+                -Địa điểm:
+                <a
+                  href="https://www.google.com/maps/search/?api=1&query=76X3%2BMXM,+Thới+Bình,+Cà+Mau,+Vietnam"
+                  target="_blank"
+                  >Thới Bình, Cà Mau</a
+                ><br />
+                -Loại di tích: Lịch sử-văn hoá<br />
+                <figure>
+                  <img
+                    src="https://sovhttdltuyenquang.vn/wp-content/uploads/2023/12/chua-cao-dan-ca-mau.jpg"
+                    class="w3-container"
+                    alt="Chùa Cao Dân"
+                  />
+                  <figcaption style="font-size: 15px" class="w3-animate-left">
+                    (nguồn thông tin và hình ảnh:
+                    <a
+                      href="https://sovhttdltuyenquang.vn/di-tich-lich-su-ca-mau/"
+                      target="_blank"
+                      >sovhttdltuyenquang.vn</a
+                    >)
+                  </figcaption>
+                </figure>
+              </li>
+
+              <li>
+                Di tích Hòn Khoai<br />
+                -Địa điểm:
+                <a
+                  href="https://www.google.com/maps/search/?api=1&query=Hon+Khoai,+Ca+Mau,+Vietnam"
+                  target="_blank"
+                  >Cà Mau, Vietnam</a
+                ><br />
+                -Loại di tích: Di tích lịch sử – văn hóa kết hợp danh lam thắng
+                cảnh<br />
+                <figure>
+                  <img
+                    src="https://sovhttdltuyenquang.vn/wp-content/uploads/2023/12/di-tich-hon-khoai-ca-mau.jpg"
+                    class="w3-container"
+                    alt="Hòn Khoai"
+                  />
+                  <figcaption style="font-size: 15px" class="w3-animate-left">
+                    (nguồn thông tin và hình ảnh:
+                    <a
+                      href="https://sovhttdltuyenquang.vn/di-tich-lich-su-ca-mau/"
+                      target="_blank"
+                      >sovhttdltuyenquang.vn</a
+                    >)
+                  </figcaption>
+                </figure>
+              </li>
+
+              <li>
+                Di tích chùa Phật Tổ (Chùa Sắc Tứ Quan Âm Cổ Tự)<br />
+                -Địa điểm:
+                <a
+                  href="https://www.google.com/maps/search/?api=1&query=Chùa+Phật+Tổ,+Phường+4,+Thành+phố+Cà+Mau"
+                  target="_blank"
+                  >Phường 4, Thành phố Cà Mau, Cà Mau</a
+                ><br />
+                -Loại di tích: Lịch sử-văn hoá<br />
+                <figure>
+                  <img
+                    src="https://sovhttdltuyenquang.vn/wp-content/uploads/2023/12/di-tich-chua-phat-to-ca-mau.jpg"
+                    class="w3-container"
+                    alt="Chùa Phật Tổ"
+                  />
+                  <figcaption style="font-size: 15px" class="w3-animate-left">
+                    (nguồn thông tin và hình ảnh:
+                    <a
+                      href="https://sovhttdltuyenquang.vn/di-tich-lich-su-ca-mau/"
+                      target="_blank"
+                      >sovhttdltuyenquang.vn</a
+                    >)
+                  </figcaption>
+                </figure>
+              </li>
+
+              <li>
+                Di tích nhà Dây Thép<br />
+                -Địa điểm:
+                <a
+                  href="https://www.google.com/maps/search/?api=1&query=54HW%2B3GJ,+Lý+Bôn,+Phường+2,+Cà+Mau"
+                  target="_blank"
+                  >Lý Bôn, Phường 2, Cà Mau</a
+                ><br />
+                -Loại di tích: Lịch sử-văn hoá<br />
+                <figure>
+                  <img
+                    src="https://sovhttdltuyenquang.vn/wp-content/uploads/2023/12/di-tich-nha-day-thep-ca-mau.jpg"
+                    class="w3-container"
+                    alt="Nhà Dây Thép"
+                  />
+                  <figcaption style="font-size: 15px" class="w3-animate-left">
+                    (nguồn thông tin và hình ảnh:
+                    <a
+                      href="https://sovhttdltuyenquang.vn/di-tich-lich-su-ca-mau/"
+                      target="_blank"
+                      >sovhttdltuyenquang.vn</a
+                    >)
+                  </figcaption>
+                </figure>
+              </li>
+
+              <li>
+                Di tích Hồng Anh Thư Quán<br />
+                -Địa điểm:
+                <a
+                  href="https://www.google.com/maps/search/?api=1&query=Số+43+Pham+Van+Ky,+Phường+5,+Cà+Mau"
+                  target="_blank"
+                  >Phường 5, Cà Mau</a
+                ><br />
+                -Loại di tích: Lịch sử-văn hoá<br />
+                <figure>
+                  <img
+                    src="https://sovhttdltuyenquang.vn/wp-content/uploads/2023/12/di-tich-hong-anh-thu-quan.jpg"
+                    class="w3-container"
+                    alt="Hồng Anh Thư Quán"
+                  />
+                  <figcaption style="font-size: 15px" class="w3-animate-left">
+                    (nguồn thông tin và hình ảnh:
+                    <a
+                      href="https://sovhttdltuyenquang.vn/di-tich-lich-su-ca-mau/"
+                      target="_blank"
+                      >sovhttdltuyenquang.vn</a
+                    >)
+                  </figcaption>
+                </figure>
+              </li>
+
+              <li>
+                Di tích Biệt khu Hải Yến – Bình Hưng<br />
+                -Địa điểm:
+                <a
+                  href="https://www.google.com/maps/search/?api=1&query=VVM4%2BHHX,+Tân+Hải,+Phú+Tân,+Cà+Mau"
+                  target="_blank"
+                  >Tân Hải, Phú Tân, Cà Mau</a
+                ><br />
+                -Loại di tích: Lịch sử-văn hoá<br />
+                <figure>
+                  <img
+                    src="https://sovhttdltuyenquang.vn/wp-content/uploads/2023/12/biet-khu-hai-yen-binh-hung.jpg"
+                    class="w3-container"
+                    alt="Biệt khu Hải Yến"
+                  />
+                  <figcaption style="font-size: 15px" class="w3-animate-left">
+                    (nguồn thông tin và hình ảnh:
+                    <a
+                      href="https://sovhttdltuyenquang.vn/di-tich-lich-su-ca-mau/"
+                      target="_blank"
+                      >sovhttdltuyenquang.vn</a
+                    >)
+                  </figcaption>
+                </figure>
+              </li>
+
+              <li>
+                Di tích Quốc gia Đặc biệt Căn cứ Cái Chanh<br />
+                -Địa điểm:
+                <a
+                  href="https://www.google.com/maps/search/?api=1&query=G8CH%2B2R9,+Ninh+Thạnh+Lợi,+Hồng+Dân,+Bạc+Liêu"
+                  target="_blank"
+                  >Ninh Thạnh Lợi, Hồng Dân, Bạc Liêu</a
+                ><br />
+                -Loại di tích: Lịch sử-văn hoá<br />
+                <figure>
+                  <img
+                    src="https://images.travelviet.net/vietnam/s3/s3_amazon/88961704-ee40-4629-ba2f-dff86724a47e-di-tich-quoc-gia-dac-biet-can-cu-cai-chanhpng.png"
+                    class="w3-container"
+                    alt="Căn cứ Cái Chanh"
+                  />
+                  <figcaption style="font-size: 15px" class="w3-animate-left">
+                    (nguồn thông tin và hình ảnh:
+                    <a
+                      href="https://travelviet.net/vn/news/ca-mau/top-10-di-tich-lich-su-tai-bac-lieu-noi-tieng-dung-bo-lo"
+                      target="_blank"
+                      >travelviet.net</a
+                    >)
+                  </figcaption>
+                </figure>
+              </li>
+
+              <li>
+                Phước Đức Cổ Miếu<br />
+                -Địa điểm:
+                <a
+                  href="https://www.google.com/maps/search/?api=1&query=7PMF%2BPMW,+Điện+Biên+Phủ,+Phường+3,+Bạc+Liêu"
+                  target="_blank"
+                  >Điện Biên Phủ, Phường 3, Bạc Liêu</a
+                ><br />
+                -Loại di tích: Lịch sử-văn hoá<br />
+                <figure>
+                  <img
+                    src="https://images.travelviet.net/vietnam/s3/s3_amazon/83c87803-0e24-45de-a233-5f18fdc749c4-phuoc-duc-co-mieu-bac-lieupng.png"
+                    class="w3-container"
+                    alt="Phước Đức Cổ Miếu"
+                  />
+                  <figcaption style="font-size: 15px" class="w3-animate-left">
+                    (nguồn thông tin và hình ảnh:
+                    <a
+                      href="https://travelviet.net/vn/news/ca-mau/top-10-di-tich-lich-su-tai-bac-lieu-noi-tieng-dung-bo-lo"
+                      target="_blank"
+                      >travelviet.net</a
+                    >)
+                  </figcaption>
+                </figure>
+              </li>
+
+              <li>
+                Thành Hoàng Cổ Miếu<br />
+                -Địa điểm:
+                <a
+                  href="https://www.google.com/maps/search/?api=1&query=6+ĐT978B,+Hoà+Bình,+Hòa+Bình,+Bạc+Liêu"
+                  target="_blank"
+                  >Hòa Bình, Bạc Liêu</a
+                ><br />
+                -Loại di tích: Lịch sử-văn hoá<br />
+                <figure>
+                  <img
+                    src="https://images.travelviet.net/vietnam/s3/s3_amazon/9edcc9cf-ba81-4f9f-b383-726521fe44ed-thanh-hoang-co-mieu-bac-lieupng.png"
+                    class="w3-container"
+                    alt="Thành Hoàng Cổ Miếu"
+                  />
+                  <figcaption style="font-size: 15px" class="w3-animate-left">
+                    (nguồn thông tin và hình ảnh:
+                    <a
+                      href="https://travelviet.net/vn/news/ca-mau/top-10-di-tich-lich-su-tai-bac-lieu-noi-tieng-dung-bo-lo"
+                      target="_blank"
+                      >travelviet.net</a
+                    >)
+                  </figcaption>
+                </figure>
+              </li>
+
+              <li>
+                Đình An Trạch<br />
+                -Địa điểm:
+                <a
+                  href="https://www.google.com/maps/search/?api=1&query=7PPH%2B7G4,+Thống+Nhất,+Phường+5,+Bạc+Liêu"
+                  target="_blank"
+                  >Thống Nhất, Phường 5, Bạc Liêu</a
+                ><br />
+                -Loại di tích: Lịch sử-văn hoá<br />
+                <figure>
+                  <img
+                    src="https://images.travelviet.net/vietnam/s3/s3_amazon/a240f1d1-a7ca-4029-87ba-750739ea0e99-dinh-an-trach-bac-lieupng.png"
+                    class="w3-container"
+                    alt="Đình An Trạch"
+                  />
+                  <figcaption style="font-size: 15px" class="w3-animate-left">
+                    (nguồn thông tin và hình ảnh:
+                    <a
+                      href="https://travelviet.net/vn/news/ca-mau/top-10-di-tich-lich-su-tai-bac-lieu-noi-tieng-dung-bo-lo"
+                      target="_blank"
+                      >travelviet.net</a
+                    >)
+                  </figcaption>
+                </figure>
+              </li>
+
+              <li>
+                Tháp cổ Vĩnh Hưng<br />
+                -Địa điểm:
+                <a
+                  href="https://www.google.com/maps/search/?api=1&query=9HRH%2BX73,+Vĩnh+Hưng+A,+Vĩnh+Lợi,+Bạc+Liêu"
+                  target="_blank"
+                  >Vĩnh Hưng A, Vĩnh Lợi, Bạc Liêu</a
+                ><br />
+                -Loại di tích: Lịch sử-văn hoá<br />
+                <figure>
+                  <img
+                    src="https://images.travelviet.net/vietnam/s3/s3_amazon/9eee5e75-4adc-4708-9481-c36e8ccc391f-thap-co-vinh-hung-bac-lieupng.png"
+                    class="w3-container"
+                    alt="Tháp cổ Vĩnh Hưng"
+                  />
+                  <figcaption style="font-size: 15px" class="w3-animate-left">
+                    (nguồn thông tin và hình ảnh:
+                    <a
+                      href="https://travelviet.net/vn/news/ca-mau/top-10-di-tich-lich-su-tai-bac-lieu-noi-tieng-dung-bo-lo"
+                      target="_blank"
+                      >travelviet.net</a
+                    >)
+                  </figcaption>
+                </figure>
+              </li>
+
+              <li>
+                Chùa Giác Hoa<br />
+                -Địa điểm:
+                <a
+                  href="https://www.google.com/maps/search/?api=1&query=8PX6%2B673,+QL1A,+Châu+Thới,+Vĩnh+Lợi,+Bạc+Liêu"
+                  target="_blank"
+                  >Châu Thới, Vĩnh Lợi, Bạc Liêu</a
+                ><br />
+                -Loại di tích: Lịch sử-văn hoá<br />
+                <figure>
+                  <img
+                    src="https://images.travelviet.net/vietnam/s3/s3_amazon/3a69b499-a22d-4545-99a1-025ad760982a-chua-giac-hoa-bac-lieupng.png"
+                    class="w3-container"
+                    alt="Chùa Giác Hoa"
+                  />
+                  <figcaption style="font-size: 15px" class="w3-animate-left">
+                    (nguồn thông tin và hình ảnh:
+                    <a
+                      href="https://travelviet.net/vn/news/ca-mau/top-10-di-tich-lich-su-tai-bac-lieu-noi-tieng-dung-bo-lo"
+                      target="_blank"
+                      >travelviet.net</a
+                    >)
+                  </figcaption>
+                </figure>
+              </li>
+
+              <li>
+                Chùa Xiêm Cán<br />
+                -Địa điểm:
+                <a
+                  href="https://www.google.com/maps/search/?api=1&query=7Q3X%2BC5W,+ĐT31,+Vĩnh+Trach+Đông,+Bạc+Liêu"
+                  target="_blank"
+                  >Vĩnh Trạch Đông, Bạc Liêu</a
+                ><br />
+                -Loại di tích: Lịch sử-văn hoá<br />
+                <figure>
+                  <img
+                    src="https://images.travelviet.net/vietnam/s3/s3_amazon/930a8e19-befa-40ac-a970-46b4c619fffb-chua-xiem-can-bac-lieupng.png"
+                    class="w3-container"
+                    alt="Chùa Xiêm Cán"
+                  />
+                  <figcaption style="font-size: 15px" class="w3-animate-left">
+                    (nguồn thông tin và hình ảnh:
+                    <a
+                      href="https://travelviet.net/vn/news/ca-mau/top-10-di-tich-lich-su-tai-bac-lieu-noi-tieng-dung-bo-lo"
+                      target="_blank"
+                      >travelviet.net</a
+                    >)
+                  </figcaption>
+                </figure>
+              </li>
+
+              <li>
+                Chùa Cỏ Thum (Kusthum)<br />
+                -Địa điểm:
+                <a
+                  href="https://www.google.com/maps/search/?api=1&query=F9J7%2BXF3,+Ninh+Thạnh+Lợi,+Hồng+Dân,+Bạc+Liêu"
+                  target="_blank"
+                  >Ninh Thạnh Lợi, Hồng Dân, Bạc Liêu</a
+                ><br />
+                -Loại di tích: Lịch sử-văn hoá<br />
+                <figure>
+                  <img
+                    src="https://images.travelviet.net/vietnam/s3/s3_amazon/107fe7cd-5d8b-4517-8e82-99fc3d957bbf-chua-co-thum-bac-lieupng.png"
+                    class="w3-container"
+                    alt="Chùa Cỏ Thum"
+                  />
+                  <figcaption style="font-size: 15px" class="w3-animate-left">
+                    (nguồn thông tin và hình ảnh:
+                    <a
+                      href="https://travelviet.net/vn/news/ca-mau/top-10-di-tich-lich-su-tai-bac-lieu-noi-tieng-dung-bo-lo"
+                      target="_blank"
+                      >travelviet.net</a
+                    >)
+                  </figcaption>
+                </figure>
+              </li>
+
+              <li>
+                Đền thờ Chủ tịch Hồ Chí Minh<br />
+                -Địa điểm:
+                <a
+                  href="https://www.google.com/maps/search/?api=1&query=9JJV%2B64Q,+ấp+Chà+Bang,+Vĩnh+Lợi,+Bạc+Liêu"
+                  target="_blank"
+                  >Vĩnh Lợi, Bạc Liêu</a
+                ><br />
+                -Loại di tích: Lịch sử-văn hoá<br />
+                <figure>
+                  <img
+                    src="https://images.travelviet.net/vietnam/s3/s3_amazon/06cf4be4-8313-43a0-894f-e364186a99e4-den-tho-chu-tich-ho-chi-minh-bac-lieupng.png"
+                    class="w3-container"
+                    alt="Đền thờ Bác Hồ"
+                  />
+                  <figcaption style="font-size: 15px" class="w3-animate-left">
+                    (nguồn thông tin và hình ảnh:
+                    <a
+                      href="https://travelviet.net/vn/news/ca-mau/top-10-di-tich-lich-su-tai-bac-lieu-noi-tieng-dung-bo-lo"
+                      target="_blank"
+                      >travelviet.net</a
+                    >)
+                  </figcaption>
+                </figure>
+              </li>
+
+              <li>
+                Di tích lịch sử Nọc Nạng<br />
+                -Địa điểm:
+                <a
+                  href="https://www.google.com/maps/search/?api=1&query=6CRR%2B553,+Phong+Thạnh+A,+Giá+Rai,+Bạc+Liêu"
+                  target="_blank"
+                  >Phong Thạnh A, Giá Rai, Bạc Liêu</a
+                ><br />
+                -Loại di tích: Lịch sử-văn hoá<br />
+                <figure>
+                  <img
+                    src="https://images.travelviet.net/vietnam/s3/s3_amazon/6d30a864-8cbb-4893-a2bf-7bb16e4b5093-di-tich-lich-su-noc-nang-bac-lieupng.png"
+                    class="w3-container"
+                    alt="Di tích Nọc Nạng"
+                  />
+                  <figcaption style="font-size: 15px" class="w3-animate-left">
+                    (nguồn thông tin và hình ảnh:
+                    <a
+                      href="https://travelviet.net/vn/news/ca-mau/top-10-di-tich-lich-su-tai-bac-lieu-noi-tieng-dung-bo-lo"
+                      target="_blank"
+                      >travelviet.net</a
+                    >)
+                  </figcaption>
+                </figure>
+              </li>
+            </ol>
+          </details>
+
+          <details>
+            <summary
+              class="w3-bar-item w3-button w3-padding"
+              style="font-size: large"
+            >
+              -Ngoài ra còn có các di sản văn hoá phi vật thể như:
+            </summary>
+            <ol>
+              <li>
+                -Nghề làm gác kèo ong <br />
+                -Loại hình: Nghề truyền thống <br />
+                <figure>
+                  <img
+                    src="https://www.dacsanhuongviet.vn/site/wp-content/uploads/2018/11/gac-keo-ong.jpg"
+                    class="w3-container"
+                    alt="Gác kèo ong"
+                  />
+                  <figcaption style="font-size: 15px">
+                    (nguồn thông tin và hình ảnh:
+                    <a
+                      href="https://www.dacsanhuongviet.vn/quy-trinh-ky-thuat-nghe-gac-keo-ong-tai-rung-u-minh-ca-mau-it-ai-biet/"
+                      target="_blank"
+                      >dacsanhuongviet.vn</a
+                    >)
+                  </figcaption>
+                </figure>
+              </li>
+
+              <li>
+                -Nghề làm muối ba khía<br />
+                -Loại hình: Nghề truyền thống <br />
+                <figure>
+                  <img
+                    src="https://tse4.mm.bing.net/th/id/OIP.dnDnr4efn4gVkSTtwH7WiQHaE4?cb=ucfimg2&ucfimg=1&rs=1&pid=ImgDetMain&o=7&rm=3"
+                    class="w3-container"
+                    alt="Muối ba khía"
+                  />
+                  <figcaption style="font-size: 15px">
+                    (nguồn thông tin và hình ảnh:
+                    <a
+                      href="https://vov.vn/van-hoa/di-san/muoi-ba-khia-nghe-di-san-cua-nguoi-dan-ca-mau-870544.vov"
+                      target="_blank"
+                      >vov.vn</a
+                    >)
+                  </figcaption>
+                </figure>
+              </li>
+
+              <li>
+                -Nghề làm mắm khô tôm<br />
+                -Loại hình: Nghề truyền thống <br />
+                <figure>
+                  <img
+                    src="https://uploads.nguoidothi.net.vn/content/3059313d-2f7a-4e21-9632-d9d0022388c2.jpg"
+                    alt="Mắm khô tôm"
+                  />
+                  <figcaption style="font-size: 15px">
+                    (nguồn thông tin:
+                    <a
+                      href="https://nguoidothi.net.vn/nghe-lam-tom-kho-duoc-cong-nhan-la-di-san-van-hoa-phi-vat-the-quoc-gia-42051.html"
+                      target="_blank"
+                      >nguoidothi.net.vn</a
+                    >)
+                  </figcaption>
+                </figure>
+              </li>
+
+              <li>
+                -Nghi lễ và Lễ hội Nghinh Ông <br />
+                -Loại hình: Lễ hội truyền thống <br />
+                <figure>
+                  <img
+                    src="https://static.vinwonders.com/production/le-hoi-nghinh-ong-phu-quoc-1.jpg"
+                    class="w3-container"
+                    alt="Nghinh Ông"
+                  />
+                  <figcaption style="font-size: 15px">
+                    (nguồn thông tin và hình ảnh:
+                    <a
+                      href="https://xaydungso.vn/bai-viet-khac/kham-pha-ve-le-hoi-nghinh-ong-voi-nhung-nghi-le-dac-sac-vi-cb.html"
+                      target="_blank"
+                      >xaydungso.vn</a
+                    >)
+                  </figcaption>
+                </figure>
+              </li>
+
+              <li>
+                -Nghệ thuật trống lớn của đồng bào Khmer<br />
+                -Loại hình: Nghệ thuật biểu diễn <br />
+                <figure>
+                  <img
+                    src="https://tse2.mm.bing.net/th/id/OIP.Zw0WnLdcfaAEhlV-QjQckwHaFH?cb=ucfimg2&ucfimg=1&rs=1&pid=ImgDetMain&o=7&rm=3"
+                    class="w3-container"
+                    alt="Trống lớn Khmer"
+                  />
+                  <figcaption style="font-size: 15px">
+                    (nguồn thông tin và hình ảnh:
+                    <a
+                      href="https://baovinhlong.vn/van-hoa-giai-tri/202204/cong-nhan-nhac-trong-lon-cua-dong-bao-khmer-ca-mau-la-di-san-cap-quoc-gia-3110733/"
+                      target="_blank"
+                      >baovinhlong.vn</a
+                    >)
+                  </figcaption>
+                </figure>
+              </li>
+
+              <li>
+                -Tri thức dân gian & các kiến thức – phong tục truyền thống của
+                địa phương <br />
+                -Loại hình: Tri thức dân gian / Phong tục tập quán <br />
+                <p style="font-size: 15px">
+                  (nguồn thông tin:
+                  <a
+                    href="https://www.vietnam.vn/en/phong-phu-di-san-van-hoa"
+                    target="_blank"
+                    >vietnam.vn</a
+                  >
+                  )
+                </p>
+              </li>
+
+              <li>
+                -Đờn ca tài tử Nam Bộ<br />
+                -Loại hình: Nghệ thuật biểu diễn <br />
+                <figure>
+                  <img
+                    src="https://phuongnam.vanhoavaphattrien.vn/uploads/images/2021/10/14/don-ca-tai-tu-1634206573.jpg"
+                    class="w3-container"
+                    alt="Đờn ca tài tử"
+                  />
+                  <figcaption style="font-size: 15px">
+                    (nguồn thông tin và hình ảnh:
+                    <a
+                      href="https://phuongnam.vanhoavaphattrien.vn/nghe-thuat-don-ca-tai-tu-nam-bo-la-mot-loai-hinh-sinh-hoat-van-hoa-tinh-than-khong-the-thieu-a19088.html"
+                      target="_blank"
+                      >phuongnam.vanhoavaphattrien.vn</a
+                    >)
+                  </figcaption>
+                </figure>
+              </li>
+            </ol>
+          </details>
+        </article>
+      </section>
+      <hr />
+
+      <section class="w3-row w3-padding-16" id="GIAODUC">
+        <h1 class="w3-center" style="font-size: 50px">GIÁO DỤC</h1>
+        <article>
+          <h2>
+            -Hiện nay toàn tỉnh Cà Mau có 3 trường Đại học và 7 trường Cao đẳng.
+            Danh sách các trường Đại học, Cao đẳng ở Cà Mau:
+          </h2>
+          <ol type="1">
+            <li>Trường Đại học Bạc Liêu</li>
+            <li>Trường Đại học Bình Dương (phân hiệu Cà Mau)</li>
+            <li>Trường Đại học Tôn Đức Thắng (phân hiệu Cà Mau)</li>
+            <li>Cao đẳng nghề Bạc Liêu</li>
+            <li>Cao đẳng Kinh tế - Kỹ thuật Bạc Liêu</li>
+            <li>Cao đẳng Y tế Bạc Liêu</li>
+            <li>Cao đẳng Sư phạm Cà Mau</li>
+            <li>Cao đẳng Y tế Cà Mau</li>
+            <li>Cao đẳng Cộng đồng Cà Mau</li>
+            <li>Cao đẳng nghề Việt Nam - Hàn Quốc Cà Mau</li>
+          </ol>
+          <p style="font-size: 15px">
+            (nguồn thông tin:<a
+              href="https://vi.wikipedia.org/wiki/C%C3%A0_Mau"
+              target="_blank"
+              >wiki Cà Mau</a
+            >)
+          </p>
+        </article>
+      </section>
+      <hr />
+
+      <section class="w3-row w3-padding-16" id="KINHTE">
+        <br />
+        <h1 class="w3-center" style="font-size: 50px">KINH TẾ</h1>
+        <article>
+          <h2 style="text-align: left">
+            TÓM TẮT PHÁT TRIỂN KINH TẾ AN GIANG (Tham chiếu)
+          </h2>
+          <p>
+            <b>• Truyền thống kinh tế:</b>
+            An Giang là tỉnh có truyền thống kinh tế lâu đời, cư dân chủ yếu
+            sinh sống bằng nông nghiệp, đặc biệt là trồng lúa, đánh bắt cá, tôm
+            và các nghề thủ công truyền thống như dệt lụa, mộc, đan lát, gốm và
+            khai thác đá. An Giang là địa phương đứng đầu cả nước về sản lượng
+            lúa với trên 2 triệu tấn mỗi năm, bên cạnh đó còn trồng bắp, đậu
+            nành và phát triển mạnh nuôi trồng thủy sản.
+          </p>
+          <p>
+            <b>• Nghề thủ công truyền thống:</b>
+            Nghề trồng dâu, nuôi tằm, ươm tơ và dệt lụa phát triển mạnh ở Tân
+            Châu và Chợ Mới. Lụa Tân Châu từng rất nổi tiếng vào đầu thế kỷ XX
+            nhờ độ bền và tính thẩm mỹ cao. Ở vùng Bảy Núi và Châu Giang (Châu
+            Đốc), đồng bào Khmer và Chăm duy trì nghề dệt thổ cẩm với các sản
+            phẩm như xà rông, khăn choàng, trang phục truyền thống nhiều màu
+            sắc. Nghề mộc ở Chợ Mới, đặc biệt là thợ mộc Chợ Thủ, nổi tiếng
+            trong toàn vùng Đồng bằng sông Cửu Long. Ngoài ra, nghề khai thác và
+            chế tác đá ở núi Sam, núi Sập cũng phát triển để phục vụ nhu cầu xây
+            dựng và sinh hoạt.
+          </p>
+          <p>
+            <b>• Vai trò của cây lúa:</b>
+            Mặc dù các nghề thủ công phát triển, cây lúa vẫn là nền tảng kinh tế
+            chính của người dân An Giang. Trước điều kiện lũ lụt hằng năm, người
+            dân đã sáng tạo ra phương thức canh tác lúa nổi – loại lúa có thể
+            vươn cao theo mực nước, trở thành biểu tượng cho sức sống và khả
+            năng thích nghi của cư dân vùng sông nước.
+          </p>
+          <p>
+            <b>• Kinh tế – xã hội:</b>
+            Năm 2018, An Giang có 1.908.352 người, trong đó 947.570 nam và
+            960.782 nữ, mật độ dân số khoảng 612 người/km². Tỷ lệ dân số từ 15
+            tuổi trở lên biết đọc, biết viết đạt 91,6%. Tổng sản phẩm trên địa
+            bàn (GRDP) đạt 74.297 tỷ đồng (tương đương 3,23 tỷ USD), GRDP bình
+            quân đầu người đạt 34,33 triệu đồng/năm (khoảng 1.491 USD), tốc độ
+            tăng trưởng GRDP đạt 6,52%.
+          </p>
+          <p>
+            <b>• Phát triển và hạ tầng:</b>
+            An Giang có nền kinh tế phát triển khá ổn định, từng đạt tốc độ tăng
+            trưởng GDP 13,36% vào năm 2007. Kim ngạch xuất khẩu năm 2007 đạt
+            khoảng 540 triệu USD, chiếm 13% tổng kim ngạch xuất khẩu của vùng
+            Đồng bằng sông Cửu Long. Tỉnh có hệ thống giao thông thuận lợi với
+            Quốc lộ 91, các tuyến sông lớn như sông Tiền, sông Hậu, sông Vàm Nao
+            cùng hệ thống bến phà và cảng. Cơ sở hạ tầng, giáo dục, y tế và các
+            dự án nông nghiệp, công nghiệp chế biến, du lịch sinh thái được đầu
+            tư, góp phần thúc đẩy phát triển kinh tế bền vững cho tỉnh An Giang.
+          </p>
+
+          <h2 style="text-align: center">Biểu đồ GRDP Cà Mau 1997–2024</h2>
+          <p style="text-align: center">
+            Đơn vị: nghìn tỷ đồng (giá hiện hành) / %
+          </p>
+          <figure style="width: 80%; margin: auto" class="chart-container">
+            <canvas id="grdpChart"></canvas>
+            <figcaption style="font-size: 15px; margin-top: 10px">
+              (nguồn thông tin:
+              <a
+                href="https://vi.wikipedia.org/wiki/C%C3%A0_Mau"
+                target="_blank"
+                >wiki Cà Mau</a
+              >
+              và ước tính tốc độ trung bình mỗi năm)
+            </figcaption>
+          </figure>
+        </article>
+
+        <script>
+          const ctx = document.getElementById("grdpChart");
+          new Chart(ctx, {
+            type: "bar",
+            data: {
+              labels: [
+                "1997",
+                "2007",
+                "2018",
+                "2020",
+                "2021",
+                "2022",
+                "2023",
+                "2024",
+              ],
+              datasets: [
+                {
+                  label: "GRDP An Giang (nghìn tỷ đồng)",
+                  data: [2.02, 13548, 74297, 19418, 18795, 19504, 22134, 26289],
+                  backgroundColor: "#4CAF50",
+                  yAxisID: "y",
+                },
+                {
+                  label: "Tăng trưởng GRDP (%)",
+                  data: [null, 13.36, 6.52, 5.45, 2.15, 6.87, 7.34, 7.16],
+                  backgroundColor: "#FF9800",
+                  yAxisID: "y1",
+                },
+              ],
+            },
+            options: {
+              responsive: true,
+              scales: {
+                y: {
+                  beginAtZero: true,
+                  position: "left",
+                  title: {
+                    display: true,
+                    text: "GRDP (nghìn tỷ đồng)",
+                  },
+                },
+                y1: {
+                  beginAtZero: true,
+                  position: "right",
+                  grid: {
+                    drawOnChartArea: false,
+                  },
+                  title: {
+                    display: true,
+                    text: "Tăng trưởng (%)",
+                  },
+                },
+                x: {
+                  title: {
+                    display: true,
+                    text: "Năm",
+                  },
+                },
+              },
+            },
+          });
+        </script>
+      </section>
+      <hr />
+
+      <section class="w3-row w3-padding-16" id="AMTHUC">
+        <h1 class="w3-center" style="font-size: 50px">ẨM THỰC</h1>
+        <h2>-Cà Mau có rất nhiều đặc sản nổi tiếng có thể kể đến như:</h2>
+        <article>
+          <ol>
+            <li>
+              <details>
+                <summary class="w3-bar-item w3-button w3-padding">
+                  Bánh Tằm Bì
+                </summary>
+                <p>
+                  -Món bánh tằm bì là một đặc sản Cà Mau nức tiếng, mang hương
+                  vị đồng quê dân dã nhưng đầy lôi cuốn. Món ăn này là sự hòa
+                  quyện tinh tế của những sợi bánh tằm trắng ngần, dai mềm, được
+                  làm từ bột gạo, quyện chặt với phần bì heo thái sợi mỏng, giòn
+                  sần sật.
+                  <br />
+                  -Điểm nhấn làm nên sự độc đáo của bánh tằm bì chính là nước
+                  cốt dừa béo ngậy, sóng sánh, chan đều lên trên. Hương vị ngọt
+                  bùi của nước cốt dừa, kết hợp cùng vị mặn mà của chả giò, chả
+                  lụa và rau thơm tươi mát như xà lách, dưa chuột, giá đỗ, tạo
+                  nên một bản giao hương vị giác khó quên.
+                  <br />
+                  -Chỉ cần thêm chút nước mắm chua ngọt hoặc tương ớt cay nồng,
+                  món ăn càng thêm phần hấp dẫn, đánh thức mọi giác quan của
+                  thực khách. Bánh tằm bì không chỉ là một món ăn ngon mà còn
+                  chứa đựng tinh hoa ẩm thực và nét văn hóa đặc trưng của vùng
+                  đất cực Nam Tổ quốc.
+                  <br />
+                  -Giá tham khảo: 35.000 – 50.000 đ/phần <br />
+                  -Địa chỉ thưởng thức:
+                  <a
+                    href="https://maps.app.goo.gl/n6gpMFHTA8xbVgF89"
+                    target="_blank"
+                    >2a Bùi Thị Xuân, Phường 4, Cà Mau, Vietnam</a
+                  >
+                </p>
+                <figure>
+                  <img
+                    src="https://res.klook.com/image/upload/fl_lossy.progressive,q_85/c_fill,w_1000/v1752206385/uovswo19b0holpwzvbsg.webp"
+                    class="w3-container"
+                    style="max-width: 400px"
+                    alt="Bánh Tằm Bì"
+                  />
+                  <figcaption style="font-size: smaller">
+                    (Nguồn thông tin và hình ảnh:
+                    <a
+                      href="https://www.klook.com/vi/blog/dac-san-ca-mau/?msockid=0adf62bf842e6d87379b7409853c6c96"
+                      target="_blank"
+                      >Klook</a
+                    >)
+                  </figcaption>
+                </figure>
+              </details>
+            </li>
+
+            <li>
+              <details>
+                <summary class="w3-bar-item w3-button w3-padding">
+                  Cua Đá Rang Muối
+                </summary>
+                <p>
+                  -Để khám phá ẩm thực Cà Mau mới lạ, hãy thử món Cua đá rang
+                  muối - một loại cua hiếm có và độc đáo. Cua đá sống ở vùng
+                  nước mặn, ao đầm và chìm dưới lớp bùn. Thịt cua đá ngọt và
+                  béo, khi rang muối trở nên giòn rụm và thơm phức. Mảnh gạch
+                  vàng óng ánh bên trong cua chính là phần thưởng ngon nhất của
+                  món ăn này. Để tận hưởng trọn vẹn hương vị, hãy thưởng thức
+                  cua đá rang muối khi nó còn nóng hổi.
+                  <br />
+                  -Giá tham khảo: 160.000 – 250.000 đ/kg tùy kích cỡ và nơi bán
+                  <br />
+                  -Địa chỉ thưởng thức:
+                  <a
+                    href="https://maps.app.goo.gl/QwnQ7txY52MFP2sM9"
+                    target="_blank"
+                    >Bùi Thị Trường, Phường 5, Cà Mau, Vietnam</a
+                  >
+                </p>
+                <figure>
+                  <img
+                    src="https://res.klook.com/image/upload/fl_lossy.progressive,q_85/c_fill,w_1000/v1752160859/fvtgj598xzrpmchey1tu.webp"
+                    class="w3-container"
+                    style="max-width: 400px"
+                    alt="Cua Đá Rang Muối"
+                  />
+                  <figcaption style="font-size: smaller">
+                    (Nguồn thông tin và hình ảnh:
+                    <a
+                      href="https://www.klook.com/vi/blog/dac-san-ca-mau/?msockid=0adf62bf842e6d87379b7409853c6c96"
+                      target="_blank"
+                      >Klook</a
+                    >)
+                  </figcaption>
+                </figure>
+              </details>
+            </li>
+
+            <li>
+              <details>
+                <summary class="w3-bar-item w3-button w3-padding">
+                  Cá Thòi Lòi Cà Mau Nướng Muối Ớt
+                </summary>
+                <p>
+                  -Đối với những ai yêu thích cá, cá thòi lòi sẽ là món ngon Cà
+                  Mau tuyệt vời. Dù có vẻ ngoại hình không mấy xinh đẹp, nhưng
+                  cá thòi lòi lại mang trong mình hương vị ngọt ngào. Thịt cá
+                  thòi lòi dai và ngọt, rất thích hợp để nướng hoặc nướng muối
+                  ớt. Khi chế biến, cá sẽ có lớp da giòn và thịt săn chắc, mang
+                  đến hương vị tự nhiên của cá cùng vị mặn của muối hoặc cay của
+                  ớt. Bạn có thể chấm cá nướng với nước mắm pha tỏi ớt hoặc muối
+                  tiêu chanh để làm tăng thêm hương vị cho món ăn.
+                  <br />
+                  -Giá tham khảo: 60.000 – 90.000 đ/phần <br />
+                  -Địa chỉ thưởng thức:
+                  <a
+                    href="https://maps.app.goo.gl/wVXpxoh3TrshVkVy6"
+                    target="_blank"
+                    >57 Đường Ngô Gia Tự, Khóm 5, Cà Mau, 27000, Vietnam</a
+                  >
+                </p>
+                <figure>
+                  <img
+                    src="https://res.klook.com/image/upload/fl_lossy.progressive,q_85/c_fill,w_1000/v1685348976/blog/skurklmuiljmk7vr2ahk.webp"
+                    class="w3-container"
+                    style="max-width: 400px"
+                    alt="Cá thòi lòi nướng"
+                  />
+                  <figcaption style="font-size: smaller">
+                    (Nguồn thông tin và hình ảnh:
+                    <a
+                      href="https://www.klook.com/vi/blog/dac-san-ca-mau/?msockid=0adf62bf842e6d87379b7409853c6c96"
+                      target="_blank"
+                      >Klook</a
+                    >)
+                  </figcaption>
+                </figure>
+              </details>
+            </li>
+
+            <li>
+              <details>
+                <summary class="w3-bar-item w3-button w3-padding">
+                  Ốc Len Xào Dừa
+                </summary>
+                <p>
+                  -Đừng bỏ qua ốc len xào dừa khi đến Cà Mau. Ốc len là loại ốc
+                  nhỏ sống trong bùn ven sông. Ốc len có thịt ngọt và bùi, khi
+                  xào với nước cốt dừa tạo nên một món ăn hấp dẫn không thể chối
+                  từ. Sợi dừa trắng bóng bám quanh miếng ốc len là điểm nhấn độc
+                  đáo, khiến hương vị trở nên béo ngậy của dừa và ngọt thanh của
+                  ốc trở nên tuyệt vời. Để thưởng thức một cách đầy đủ, ốc len
+                  xào dừa thường được kết hợp với bánh tráng hoặc bún.
+                  <br />
+                  -Giá tham khảo: 30.000 – 50.000 đ/đĩa <br />
+                  -Địa chỉ thưởng thức:
+                  <a
+                    href="https://maps.app.goo.gl/T6qWP6eocUNM2i149"
+                    target="_blank"
+                    >264 Đ. Trần Hưng Đạo, Phường 5, Cà Mau, Vietnam</a
+                  >
+                </p>
+                <figure>
+                  <img
+                    src="https://res.klook.com/image/upload/fl_lossy.progressive,q_85/c_fill,w_1000/v1685349004/blog/rgemzrmgzup14mibuls8.webp"
+                    class="w3-container"
+                    style="max-width: 400px"
+                    alt="Ốc len xào dừa"
+                  />
+                  <figcaption style="font-size: smaller">
+                    (Nguồn thông tin và hình ảnh:
+                    <a
+                      href="https://www.klook.com/vi/blog/dac-san-ca-mau/?msockid=0adf62bf842e6d87379b7409853c6c96"
+                      target="_blank"
+                      >Klook</a
+                    >)
+                  </figcaption>
+                </figure>
+              </details>
+            </li>
+
+            <li>
+              <details>
+                <summary class="w3-bar-item w3-button w3-padding">
+                  Vọp Nướng
+                </summary>
+                <p>
+                  -Hãy khám phá vọp nướng chấm muối tiêu chanh - loại hải sản có
+                  hình dáng giống sứa nhưng thịt trắng ngọt. Vọp được nướng trực
+                  tiếp trên lửa cho đến khi vỏ nứt ra, rồi chấm với muối tiêu
+                  chanh. Khi ăn, bạn sẽ cảm nhận được hương vị ngọt của vọp cùng
+                  vị chua cay của muối tiêu chanh, tạo nên một sự kết hợp hấp
+                  dẫn. Vọp nướng chấm muối tiêu chanh là món ăn Cà Mau quen
+                  thuộc trong những chầu “nhậu” vui hết nấc.
+                  <br />
+                  -Giá tham khảo: 50.000 – 60.000 đ/phần <br />
+                  -Địa chỉ thưởng thức:
+                  <a
+                    href="https://maps.app.goo.gl/oPTkjiiJEuvzzG7u7"
+                    target="_blank"
+                    >255 Đ. Trần Hưng Đạo, Phường 5, Cà Mau, 98100, Vietnam</a
+                  >
+                </p>
+                <figure>
+                  <img
+                    src="https://res.klook.com/image/upload/fl_lossy.progressive,q_85/c_fill,w_1000/v1685349054/blog/kckawonujsorsmfntulw.webp"
+                    class="w3-container"
+                    style="max-width: 400px"
+                    alt="Vọp nướng"
+                  />
+                  <figcaption style="font-size: smaller">
+                    (Nguồn thông tin và hình ảnh:
+                    <a
+                      href="https://www.klook.com/vi/blog/dac-san-ca-mau/?msockid=0adf62bf842e6d87379b7409853c6c96"
+                      target="_blank"
+                      >Klook</a
+                    >)
+                  </figcaption>
+                </figure>
+              </details>
+            </li>
+
+            <li>
+              <details>
+                <summary class="w3-bar-item w3-button w3-padding">
+                  Bún Nước Lèo
+                </summary>
+                <p>
+                  -Bún nước lèo là món ăn truyền thống đặc sản của người Khmer
+                  Cà Mau. Nước dùng của bún được nấu từ cá linh, cá sặc, tôm
+                  khô, thịt heo và đa dạng rau củ. Bún thường được ăn kèm với cá
+                  chiên, chả cá, nem chua rán... Khi thưởng thức, bạn sẽ cảm
+                  nhận được vị ngọt thanh từ nước lèo và hương vị đậm đà từ các
+                  loại hải sản và thịt.
+                  <br />
+                  -Giá tham khảo: 20.000-40.000đ/phần <br />
+                  -Địa chỉ thưởng thức:
+                  <a
+                    href="https://maps.app.goo.gl/MY4hsFXEBANWCH4C9"
+                    target="_blank"
+                    >6 Đ. Hùng Vương, Phường 5, Cà Mau, Vietnam</a
+                  >
+                </p>
+                <figure>
+                  <img
+                    src="https://res.klook.com/image/upload/fl_lossy.progressive,q_85/c_fill,w_1000/v1752160983/crfufntno06bwof0tyzm.webp"
+                    class="w3-container"
+                    style="max-width: 400px"
+                    alt="Bún nước lèo"
+                  />
+                  <figcaption style="font-size: smaller">
+                    (Nguồn thông tin và hình ảnh:
+                    <a
+                      href="https://www.klook.com/vi/blog/dac-san-ca-mau/?msockid=0adf62bf842e6d87379b7409853c6c96"
+                      target="_blank"
+                      >Klook</a
+                    >)
+                  </figcaption>
+                </figure>
+              </details>
+            </li>
+
+            <li>
+              <details>
+                <summary class="w3-bar-item w3-button w3-padding">
+                  Bánh Canh Ghẹ
+                </summary>
+                <p>
+                  -Món bánh canh ghẹ là một đặc sản nổi tiếng của Cà Mau. Nước
+                  dùng của bánh canh được chế biến từ ghẹ, một loại cua nhỏ, và
+                  xương heo. Bên cạnh bánh canh mềm mịn, món ăn còn được kết hợp
+                  với ghẹ luộc, giò heo, rau sống... Khi thưởng thức, bạn sẽ
+                  trải nghiệm vị ngọt của ghẹ và vị béo của xương heo. Để làm
+                  thêm hương thơm cho món ăn, bạn có thể thêm hành lá, rau răm,
+                  tỏi phi.
+                  <br />
+                  -Giá tham khảo: 30.000 đến 50.000 đồng/phần <br />
+                  -Địa chỉ thưởng thức:
+                  <a
+                    href="https://maps.app.goo.gl/AzwGyfzQm4TczkMH6"
+                    target="_blank"
+                    >33 Ấp Bắc, Phường 10, Mỹ Tho, Tiền Giang, Vietnam</a
+                  >
+                </p>
+                <figure>
+                  <img
+                    src="https://res.klook.com/image/upload/fl_lossy.progressive,q_85/c_fill,w_1000/v1685349100/blog/gmbjas6nncijjf7y3xpb.webp"
+                    class="w3-container"
+                    style="max-width: 400px"
+                    alt="Bánh canh ghẹ"
+                  />
+                  <figcaption style="font-size: smaller">
+                    (Nguồn thông tin và hình ảnh:
+                    <a
+                      href="https://www.klook.com/vi/blog/dac-san-ca-mau/?msockid=0adf62bf842e6d87379b7409853c6c96"
+                      target="_blank"
+                      >Klook</a
+                    >)
+                  </figcaption>
+                </figure>
+              </details>
+            </li>
+
+            <li>
+              <details>
+                <summary class="w3-bar-item w3-button w3-padding">
+                  Khô Cà Mau
+                </summary>
+                <p>
+                  -Khô Cà Mau là đặc sản thú vị và được biết đến như một món quà
+                  độc đáo của Cà Mau. Được làm từ những loại hải sản phơi khô
+                  như cá sặc, cá lóc, cá thuốc lá, tôm tích và ba khía, Khô Cà
+                  Mau mang đến nhiều lựa chọn ngon miệng. Bạn có thể chiên hoặc
+                  nấu canh chua với những loại khô Cà Mau này để thưởng thức
+                  những món ăn hấp dẫn. Bạn có thể mua Khô Cà Mau làm quà tặng
+                  cho người thân yêu hoặc thưởng thức tại nhà.
+                  <br />
+                  -Giá tham khảo: 100.000 đến 300.000 đồng/kg tùy loại. <br />
+                  -Địa chỉ thưởng thức:
+                  <a
+                    href="https://maps.app.goo.gl/y9p5H6KtZXmHYB2p7"
+                    target="_blank"
+                    >55X2+7J7, Tạ Uyên, Phường 9, Cà Mau, Vietnam</a
+                  >
+                </p>
+                <figure>
+                  <img
+                    src="https://res.klook.com/image/upload/fl_lossy.progressive,q_85/c_fill,w_1000/v1685349185/blog/vzxdo90dpqfek8uy7wch.webp"
+                    class="w3-container"
+                    style="max-width: 400px"
+                    alt="Khô Cà Mau"
+                  />
+                  <figcaption style="font-size: smaller">
+                    (Nguồn thông tin và hình ảnh:
+                    <a
+                      href="https://www.klook.com/vi/blog/dac-san-ca-mau/?msockid=0adf62bf842e6d87379b7409853c6c96"
+                      target="_blank"
+                      >Klook</a
+                    >)
+                  </figcaption>
+                </figure>
+              </details>
+            </li>
+
+            <li>
+              <details>
+                <summary class="w3-bar-item w3-button w3-padding">
+                  Chả Cá Cà Mau
+                </summary>
+                <p>
+                  -Thưởng thức hương vị thơm ngon của chả cá Cà Mau - món ăn
+                  ngon Cà Mau được chế biến từ cá thu, xay nhuyễn kết hợp với
+                  gia vị độc đáo. Chả cá Cà Mau có thể được chiên giòn hoặc hấp
+                  chín, tùy theo sở thích, và thường được ăn kèm với bún hoặc
+                  bánh tráng. Với vị ngọt của cá tươi và hương thơm của gia vị,
+                  chả cá Cà Mau thật sự là một món ngon độc đáo.
+                  <br />
+                  -Bạn có thể tẩm bột nêm hoặc chấm chả cá Cà Mau với nước mắm
+                  pha tỏi ớt hoặc muối tiêu chanh để tăng thêm hương vị tuyệt
+                  vời cho món ăn Cà Mau này.
+                  <br />
+                  -Giá tham khảo: 50.000 – 300.000 đ/kg <br />
+                  -Địa chỉ thưởng thức:
+                  <a
+                    href="https://maps.app.goo.gl/oCMdoUoz56N3rEqJ6"
+                    target="_blank"
+                    >Ấp tân lợi a, Đầm Dơi, Cà Mau, Vietnam</a
+                  >
+                </p>
+                <figure>
+                  <img
+                    src="https://res.klook.com/image/upload/fl_lossy.progressive,q_85/c_fill,w_1000/v1685349239/blog/oeay2oxprczherx58hes.webp"
+                    class="w3-container"
+                    style="max-width: 400px"
+                    alt="Chả cá Cà Mau"
+                  />
+                  <figcaption style="font-size: smaller">
+                    (Nguồn thông tin và hình ảnh:
+                    <a
+                      href="https://www.klook.com/vi/blog/dac-san-ca-mau/?msockid=0adf62bf842e6d87379b7409853c6c96"
+                      target="_blank"
+                      >Klook</a
+                    >)
+                  </figcaption>
+                </figure>
+              </details>
+            </li>
+
+            <li>
+              <details>
+                <summary class="w3-bar-item w3-button w3-padding">
+                  Bánh Phồng Cua
+                </summary>
+                <p>
+                  -Hãy khám phá bánh phồng cua Cà Mau - một đặc sản độc đáo được
+                  chế biến từ cua tự nhiên sinh sống trong vùng sinh thái đặc
+                  biệt của Cà Mau. Bánh phồng cua Cà Mau sở hữu vị ngọt đậm của
+                  cua gạch cùng hương thơm phong phú của tỏi, tiêu và các loại
+                  gia vị. Bánh phồng cua Cà Mau không chỉ là một món đặc sản quê
+                  nhà mà còn thường được dùng làm quà biếu tặng cho người thân
+                  yêu.
+                  <br />
+                  -Giá tham khảo: 99,000 – 160,000 ₫ / 500 g <br />
+                  -Địa chỉ thưởng thức:
+                  <a
+                    href="https://maps.app.goo.gl/RhyFtBP4tikJ1s8g8"
+                    target="_blank"
+                    >Hàng Vịnh, Năm Căn District, Ca Mau, Vietnam</a
+                  >
+                </p>
+                <figure>
+                  <img
+                    src="https://res.klook.com/image/upload/fl_lossy.progressive,q_85/c_fill,w_1000/v1685349256/blog/qxlbkxccfmbcujk4brjb.webp"
+                    class="w3-container"
+                    style="max-width: 400px"
+                    alt="Bánh phồng cua"
+                  />
+                  <figcaption style="font-size: smaller">
+                    (Nguồn thông tin và hình ảnh:
+                    <a
+                      href="https://www.klook.com/vi/blog/dac-san-ca-mau/?msockid=0adf62bf842e6d87379b7409853c6c96"
+                      target="_blank"
+                      >Klook</a
+                    >)
+                  </figcaption>
+                </figure>
+              </details>
+            </li>
+
+            <li>
+              <details>
+                <summary class="w3-bar-item w3-button w3-padding">
+                  Mắm Ba Khía
+                </summary>
+                <p>
+                  -Khám phá hương vị đặc trưng của ẩm thực Cà Mau qua mắm ba
+                  khía. Đây là loại mắm được chế biến từ ba khía - loài cua nhỏ
+                  sống trong bùn, sau đó được ướp muối và phơi khô dưới ánh nắng
+                  mặt trời. Mắm ba khía có hương vị mặn đặc trưng. Bạn có thể
+                  thưởng thức mắm ba khía cùng cơm trắng hoặc bánh tráng mỏng.
+                  Hãy thử chấm mắm ba khía với nước mắm pha tỏi ớt hoặc muối
+                  tiêu chanh để tăng thêm hương vị độc đáo cho món ăn.
+                  <br />
+                  -Giá tham khảo: ~85.000 ₫ / ~500 g <br />
+                  -Địa chỉ thưởng thức:
+                  <a
+                    href="https://maps.app.goo.gl/R75qFLuKb46NkAB98"
+                    target="_blank"
+                    >Tân Ân, Ngọc Hiển District, Ca Mau, Vietnam</a
+                  >
+                </p>
+                <figure>
+                  <img
+                    src="https://res.klook.com/image/upload/fl_lossy.progressive,q_85/c_fill,w_1000/v1752161188/hgxarsezajnta27e5fxl.webp"
+                    class="w3-container"
+                    style="max-width: 400px"
+                    alt="Mắm ba khía"
+                  />
+                  <figcaption style="font-size: smaller">
+                    (Nguồn thông tin và hình ảnh:
+                    <a
+                      href="https://www.klook.com/vi/blog/dac-san-ca-mau/?msockid=0adf62bf842e6d87379b7409853c6c96"
+                      target="_blank"
+                      >Klook</a
+                    >)
+                  </figcaption>
+                </figure>
+              </details>
+            </li>
+
+            <li>
+              <details>
+                <summary class="w3-bar-item w3-button w3-padding">
+                  Xá bấu
+                </summary>
+                <p>
+                  -Xá bấu là món ăn không còn xa lạ với người miền Nam, được chế
+                  biến từ rau củ muối như dưa cải, nhưng lại mang hương vị rất
+                  riêng. Món ăn được làm từ củ cải trắng tươi, thái miếng và
+                  phơi nắng cho khô, đến khi héo lại thì mang đi tẩm ướp gia vị
+                  là có thể ăn ngay.
+                  <br />
+                  -Xá bấu ngon nhất khi ăn cùng cơm, cháo hoặc thịt nướng, món
+                  ăn chế biến dễ dàng, mang mùi vị dân dã nhưng lại cuốn hút mãi
+                  không thôi. Du khách có thể tìm mua xá bấu tại các khu chợ,
+                  hoặc cửa hàng thực phẩm để làm quà khi đi du lịch.
+                  <br />
+                  -Giá tham khảo: 40.000 - 50.000VNĐ/hộp <br />
+                  -Địa chỉ thưởng thức:
+                  <a
+                    href="https://maps.app.goo.gl/ursRvXnhnrz2xP2z6"
+                    target="_blank"
+                    >471 Lê Văn Sỹ, Phường 7, Cà Mau, Vietnam</a
+                  >
+                </p>
+                <figure>
+                  <img
+                    src="https://ik.imagekit.io/tvlk/blog/2022/09/dac-san-bac-lieu-6.jpeg?tr=q-70,c-at_max,w-1000,h-600"
+                    class="w3-container"
+                    style="max-width: 400px"
+                    alt="Xá bấu"
+                  />
+                  <figcaption style="font-size: smaller">
+                    (Nguồn thông tin và hình ảnh:
+                    <a
+                      href="https://www.traveloka.com/vi-vn/explore/culinary/dac-san-bac-lieu/164322"
+                      target="_blank"
+                      >Traveloka</a
+                    >)
+                  </figcaption>
+                </figure>
+              </details>
+            </li>
+          </ol>
+        </article>
+      </section>
+      <hr />
+
+      <section class="w3-row w3-padding-16" id="DULICH">
+        <h1 class="w3-center" style="font-size: 50px">DU LỊCH</h1>
+        <h2>-Cà Mau có những điểm du lịch nổi tiếng như:</h2>
+        <article>
+          <ol>
+            <li>
+              <details>
+                <summary class="w3-bar-item w3-button w3-padding summary">
+                  Miếu Bà Chúa Xứ Núi Sam (tham chiếu)
+                </summary>
+                <p class="detail-content">
+                  -Miếu Bà Chúa Xứ Núi Sam là địa danh linh thiêng và nổi tiếng
+                  bậc nhất An Giang... <br />
+                  -Địa điểm: <br />
+                  <a
+                    href="https://maps.app.goo.gl/PvdDgGCXTMarP8bJ6"
+                    target="_blank"
+                    >925 Phạm Văn Bạch Khóm, Vĩnh Tây 1, Châu Đốc, An Giang,
+                    Vietnam</a
+                  >
+                </p>
+                <figure>
+                  <img
+                    src="https://static.vinwonders.com/production/2025/10/vieng-chua-ba-chau-doc-1.jpg"
+                    class="w3-container"
+                    alt="Miếu Bà Chúa Xứ"
+                  />
+                  <figcaption style="font-size: smaller">
+                    (Nguồn thông tin và hình ảnh:
+                    <a
+                      href="https://vinwonders.com/vi/wonderpedia/news/du-lich-an-giang/"
+                      target="_blank"
+                      >VinWonders</a
+                    >)
+                  </figcaption>
+                </figure>
+              </details>
+            </li>
+
+            <li>
+              <details>
+                <summary class="w3-bar-item w3-button w3-padding">
+                  Chợ nổi Long Xuyên (tham chiếu)
+                </summary>
+                <p>
+                  -Nằm trên dòng sông Hậu hiền hòa, chợ nổi Long Xuyên là địa
+                  điểm du lịch An Giang hấp dẫn... <br />
+                  -Địa điểm: <br />
+                  <a
+                    href="https://maps.app.goo.gl/WvmqnMTZhT4FNoi48"
+                    target="_blank"
+                    >9CMV+GV Long Xuyen, An Giang, Vietnam</a
+                  >
+                </p>
+                <figure>
+                  <img
+                    src="https://static.vinwonders.com/production/2025/10/cho-noi-long-xuyen.jpg"
+                    class="w3-container"
+                    alt="Chợ nổi Long Xuyên"
+                  />
+                  <figcaption style="font-size: smaller">
+                    (Nguồn thông tin và hình ảnh:
+                    <a
+                      href="https://vinwonders.com/vi/wonderpedia/news/du-lich-an-giang/"
+                      target="_blank"
+                      >VinWonders</a
+                    >)
+                  </figcaption>
+                </figure>
+              </details>
+            </li>
+
+            <li>
+              <details>
+                <summary class="w3-bar-item w3-button w3-padding">
+                  Hồ Tà Pạ (tham chiếu)
+                </summary>
+                <p>
+                  Nằm yên bình dưới chân núi Cô Tô của vùng Tri Tôn... <br />
+                  -Địa điểm: <br />
+                  <a
+                    href="https://maps.app.goo.gl/7GksPjA8G5o4KvrLA"
+                    target="_blank"
+                    >Núi Tô, Tri Tôn, An Giang, Vietnam</a
+                  >
+                </p>
+                <figure>
+                  <img
+                    src="https://static.vinwonders.com/production/2025/10/ho-ta-pa-an-giang.jpg"
+                    class="w3-container"
+                    alt="Hồ Tà Pạ"
+                  />
+                  <figcaption style="font-size: smaller">
+                    (Nguồn thông tin và hình ảnh:
+                    <a
+                      href="https://vinwonders.com/vi/wonderpedia/news/du-lich-an-giang/"
+                      target="_blank"
+                      >VinWonders</a
+                    >)
+                  </figcaption>
+                </figure>
+              </details>
+            </li>
+
+            <li>
+              <details>
+                <summary class="w3-bar-item w3-button w3-padding">
+                  Thánh đường Masjid Al Ehsan (tham chiếu)
+                </summary>
+                <p>
+                  Thánh đường Masjid Al Ehsan là một trong những điểm du lịch An
+                  Giang độc đáo... <br />
+                  -Địa điểm: <br />
+                  <a
+                    href="https://maps.app.goo.gl/EodKNajMEHQXFxix6"
+                    target="_blank"
+                    >P4FF+RVC, ĐT956, Đa Phước, An Phú, An Giang, Vietnam</a
+                  >
+                </p>
+                <figure>
+                  <img
+                    src="https://static.vinwonders.com/production/2025/10/thanh-duong-masjid-al-ehsan.jpeg"
+                    class="w3-container"
+                    alt="Masjid Al Ehsan"
+                  />
+                  <figcaption style="font-size: smaller">
+                    (Nguồn thông tin và hình ảnh:
+                    <a
+                      href="https://vinwonders.com/vi/wonderpedia/news/du-lich-an-giang/"
+                      target="_blank"
+                      >VinWonders</a
+                    >)
+                  </figcaption>
+                </figure>
+              </details>
+            </li>
+
+            <li>
+              <details>
+                <summary class="w3-bar-item w3-button w3-padding">
+                  Núi Cấm (tham chiếu)
+                </summary>
+                <p>
+                  -Núi Cấm hay còn gọi Thiên Cấm Sơn có độ cao hơn 700m...
+                  <br />
+                  -Địa điểm: <br />
+                  <a
+                    href="https://maps.app.goo.gl/5CErA33H4hLkBUsV9"
+                    target="_blank"
+                    >Tịnh Biên, An Giang, Vietnam</a
+                  >
+                  <br />
+                </p>
+                <figure>
+                  <img
+                    src="https://static.vinwonders.com/production/2025/10/nui-cam-an-giang.jpg"
+                    class="w3-container"
+                    style="max-width: 400px"
+                    alt="Núi Cấm"
+                  />
+                  <figcaption style="font-size: smaller">
+                    (Nguồn thông tin và hình ảnh:
+                    <a
+                      href="https://vinwonders.com/vi/wonderpedia/news/du-lich-an-giang/"
+                      target="_blank"
+                      >VinWonders</a
+                    >)
+                  </figcaption>
+                </figure>
+              </details>
+            </li>
+
+            <li>
+              <details>
+                <summary class="w3-bar-item w3-button w3-padding">
+                  Khu du lịch sinh thái Cồn Én (tham chiếu)
+                </summary>
+                <p>
+                  -Khu du lịch sinh thái Cồn Én nằm ở Cù Lao Giêng, Chợ Mới...
+                  <br />
+                  -Địa điểm: <br />
+                  <a
+                    href="https://maps.app.goo.gl/sR7fTdSdSeWS2caF9"
+                    target="_blank"
+                    >Ấp Tấn Long, Tân Long, Chợ Mới, An Giang, Vietnam</a
+                  >
+                  <br />
+                </p>
+                <figure>
+                  <img
+                    src="https://static.vinwonders.com/production/2025/10/khu-du-lich-con-en-an-giang.jpg"
+                    class="w3-container"
+                    style="max-width: 400px"
+                    alt="Cồn Én"
+                  />
+                  <figcaption style="font-size: smaller">
+                    (Nguồn thông tin và hình ảnh:
+                    <a
+                      href="https://vinwonders.com/vi/wonderpedia/news/du-lich-an-giang/"
+                      target="_blank"
+                      >VinWonders</a
+                    >)
+                  </figcaption>
+                </figure>
+              </details>
+            </li>
+
+            <li>
+              <details>
+                <summary class="w3-bar-item w3-button w3-padding">
+                  Hồ Ô Thum (tham chiếu)
+                </summary>
+                <p>
+                  -Hồ Ô Thum nằm ở vùng Tri Tôn là hồ nhân tạo nổi tiếng...
+                  <br />
+                  -Địa điểm: <br />
+                  <a
+                    href="https://maps.app.goo.gl/UkLTKqCNGumZmiK2A"
+                    target="_blank"
+                    >9XFG+F5P, Hồ Thum, Ô, Tri Tôn, An Giang, Vietnam</a
+                  >
+                  <br />
+                </p>
+                <figure>
+                  <img
+                    src="https://static.vinwonders.com/production/2025/10/cheo-thuyen-ho-o-thum-an-giang.jpg"
+                    class="w3-container"
+                    style="max-width: 400px"
+                    alt="Hồ Ô Thum"
+                  />
+                  <figcaption style="font-size: smaller">
+                    (Nguồn thông tin và hình ảnh:
+                    <a
+                      href="https://vinwonders.com/vi/wonderpedia/news/du-lich-an-giang/"
+                      target="_blank"
+                      >VinWonders</a
+                    >)
+                  </figcaption>
+                </figure>
+              </details>
+            </li>
+
+            <li>
+              <details>
+                <summary class="w3-bar-item w3-button w3-padding">
+                  Chùa Tây An (tham chiếu)
+                </summary>
+                <p>
+                  -Chùa Tây An hay Tây An cổ tự nằm gần Miếu Bà Chúa Xứ...
+                  <br />
+                  -Địa điểm: <br />
+                  <a
+                    href="https://maps.app.goo.gl/gMPqvGydeRtEffs98"
+                    target="_blank"
+                    >Đường Đ. Vòng Núi Sam, P. Núi Sam, Châu Đốc, An Giang,
+                    Vietnam</a
+                  >
+                  <br />
+                </p>
+                <figure>
+                  <img
+                    src="https://static.vinwonders.com/production/2025/10/chua-tay-an-chau-doc-an-giang.jpg"
+                    class="w3-container"
+                    style="max-width: 400px"
+                    alt="Chùa Tây An"
+                  />
+                  <figcaption style="font-size: smaller">
+                    (Nguồn thông tin và hình ảnh:
+                    <a
+                      href="https://vinwonders.com/vi/wonderpedia/news/du-lich-an-giang/"
+                      target="_blank"
+                      >VinWonders</a
+                    >)
+                  </figcaption>
+                </figure>
+              </details>
+            </li>
+
+            <li>
+              <details>
+                <summary class="w3-bar-item w3-button w3-padding">
+                  Chùa Hang (Phước Điền Tự) (tham chiếu)
+                </summary>
+                <p>
+                  -Phước Điền Tự – chùa Hang là một trong bốn di tích văn hóa...
+                  <br />
+                  -Địa điểm: <br />
+                  <a
+                    href="https://maps.app.goo.gl/5ciapJ4kMK2owRGV9"
+                    target="_blank"
+                    >P. Núi Sam, Chau Doc, An Giang, Vietnam</a
+                  >
+                  <br />
+                </p>
+                <figure>
+                  <img
+                    src="https://static.vinwonders.com/production/2025/10/phuoc-dien-tu-chua-hang-an-giang.jpg"
+                    class="w3-container"
+                    style="max-width: 400px"
+                    alt="Chùa Hang"
+                  />
+                  <figcaption style="font-size: smaller">
+                    (Nguồn thông tin và hình ảnh:
+                    <a
+                      href="https://vinwonders.com/vi/wonderpedia/news/du-lich-an-giang/"
+                      target="_blank"
+                      >VinWonders</a
+                    >)
+                  </figcaption>
+                </figure>
+              </details>
+            </li>
+
+            <li>
+              <details>
+                <summary class="w3-bar-item w3-button w3-padding">
+                  Làng người Chăm Châu Giang (tham chiếu)
+                </summary>
+                <p>
+                  -Du lịch An Giang nên đi đâu? Tham quan làng người Chăm Châu
+                  Giang... <br />
+                  -Địa điểm: <br />
+                  <a
+                    href="https://maps.app.goo.gl/89muttgcyLpWTNyx6"
+                    target="_blank"
+                    >P4FF+VW3 TT, Đa Phước, An Phú, An Giang, Vietnam</a
+                  >
+                  <br />
+                </p>
+                <figure>
+                  <img
+                    src="https://static.vinwonders.com/production/2025/10/lang-nguoi-cham-chau-giang.jpg"
+                    class="w3-container"
+                    style="max-width: 400px"
+                    alt="Làng người Chăm Châu Giang"
+                  />
+                  <figcaption style="font-size: smaller">
+                    (Nguồn thông tin và hình ảnh:
+                    <a
+                      href="https://vinwonders.com/vi/wonderpedia/news/du-lich-an-giang/"
+                      target="_blank"
+                      >VinWonders</a
+                    >)
+                  </figcaption>
+                </figure>
+              </details>
+            </li>
+
+            <li>
+              <details>
+                <summary class="w3-bar-item w3-button w3-padding">
+                  Nhà mồ Ba Chúc (tham chiếu)
+                </summary>
+                <p>
+                  -Nhà mồ Ba Chúc ở Tri Tôn, An Giang là di tích lịch sử đặc
+                  biệt... <br />
+                  -Địa điểm: <br />
+                  <a
+                    href="https://maps.app.goo.gl/yzupCiBEqmWgPS3Z8"
+                    target="_blank"
+                    >An Định, Tri Tôn, An Giang, Vietnam</a
+                  >
+                  <br />
+                </p>
+                <figure>
+                  <img
+                    src="https://static.vinwonders.com/production/2025/10/nha-mo-ba-chuc-an-giang.jpg"
+                    class="w3-container"
+                    style="max-width: 400px"
+                    alt="Nhà mồ Ba Chúc"
+                  />
+                  <figcaption style="font-size: smaller">
+                    (Nguồn thông tin và hình ảnh:
+                    <a
+                      href="https://vinwonders.com/vi/wonderpedia/news/du-lich-an-giang/"
+                      target="_blank"
+                      >VinWonders</a
+                    >)
+                  </figcaption>
+                </figure>
+              </details>
+            </li>
+
+            <li>
+              <details>
+                <summary class="w3-bar-item w3-button w3-padding">
+                  Lăng Thoại Ngọc Hầu (tham chiếu)
+                </summary>
+                <p>
+                  -Lăng Thoại Ngọc Hầu (hay Sơn Lăng) nằm đối diện miếu Bà Chúa
+                  Xứ... <br />
+                  -Địa điểm: <br />
+                  <a
+                    href="https://maps.app.goo.gl/mfPfrN51xfmPwSmU8"
+                    target="_blank"
+                    >M3JH+QJP, P. Núi Sam, Châu Đốc, An Giang, Vietnam</a
+                  >
+                  <br />
+                </p>
+                <figure>
+                  <img
+                    src="https://static.vinwonders.com/production/2025/10/lang-thoai-ngoc-hau.jpg"
+                    class="w3-container"
+                    style="max-width: 400px"
+                    alt="Lăng Thoại Ngọc Hầu"
+                  />
+                  <figcaption style="font-size: smaller">
+                    (Nguồn thông tin và hình ảnh:
+                    <a
+                      href="https://vinwonders.com/vi/wonderpedia/news/du-lich-an-giang/"
+                      target="_blank"
+                      >VinWonders</a
+                    >)
+                  </figcaption>
+                </figure>
+              </details>
+            </li>
+
+            <li>
+              <details>
+                <summary class="w3-bar-item w3-button w3-padding">
+                  Chùa Huỳnh Đạo (tham chiếu)
+                </summary>
+                <p>
+                  -Chùa Huỳnh Đạo tọa lạc ở Châu Đốc là một trong những ngôi
+                  chùa nổi tiếng... <br />
+                  -Địa điểm: <br />
+                  <a
+                    href="https://maps.app.goo.gl/yShprTSBBjS15vuc8"
+                    target="_blank"
+                    >Quốc lộ 91 Tân Lộ Kiều Lương, Vĩnh Đông 2, Châu Đốc, An
+                    Giang, Vietnam</a
+                  >
+                  <br />
+                </p>
+                <figure>
+                  <img
+                    src="https://static.vinwonders.com/production/2025/10/chua-huynh-dao-an-giang.jpg"
+                    class="w3-container"
+                    style="max-width: 400px"
+                    alt="Chùa Huỳnh Đạo"
+                  />
+                  <figcaption style="font-size: smaller">
+                    (Nguồn thông tin và hình ảnh:
+                    <a
+                      href="https://vinwonders.com/vi/wonderpedia/news/du-lich-an-giang/"
+                      target="_blank"
+                      >VinWonders</a
+                    >)
+                  </figcaption>
+                </figure>
+              </details>
+            </li>
+
+            <li>
+              <details>
+                <summary class="w3-bar-item w3-button w3-padding">
+                  Rừng quốc gia U Minh Thượng (tham chiếu)
+                </summary>
+                <p>
+                  -Rừng quốc gia U Minh Thượng rộng hơn 21.000ha... <br />
+                  -Địa điểm:
+                  <a
+                    href="https://maps.app.goo.gl/j6893NS8cySYNKqAA"
+                    target="_blank"
+                    >J36W+MXJ, Ấp Công Sự, An Minh Bắc, U Minh Thượng, Kiên
+                    Giang, Vietnam</a
+                  >
+                  <br />
+                </p>
+                <figure>
+                  <img
+                    src="https://static.vinwonders.com/2022/04/du-lich-kien-giang-15.jpg"
+                    class="w3-container"
+                    style="max-width: 400px"
+                    alt="Rừng U Minh Thượng"
+                  />
+                  <figcaption style="font-size: smaller">
+                    (Nguồn thông tin và hình ảnh:
+                    <a
+                      href="https://vinwonders.com/vi/wonderpedia/news/du-lich-kien-giang-top-15-dia-diem-khong-the-bo-lo/"
+                      target="_blank"
+                      >VinWonders</a
+                    >)
+                  </figcaption>
+                </figure>
+              </details>
+            </li>
+
+            <li>
+              <details>
+                <summary class="w3-bar-item w3-button w3-padding">
+                  Phú Quốc – hòn đảo thiên đường (tham chiếu)
+                </summary>
+                <p>
+                  -Phú Quốc là điểm đến hấp dẫn và nổi tiếng bậc nhất... <br />
+                  -VinWonders Phú Quốc:
+                  <a
+                    href="https://maps.app.goo.gl/f8aPquf9ehbtBwxt6"
+                    target="_blank"
+                    >Khu Bãi Dài, Phu Quoc, Kien Giang</a
+                  >
+                </p>
+                <figure>
+                  <img
+                    src="https://static.vinwonders.com/2022/04/du-lich-kien-giang-02.jpg"
+                    class="w3-container"
+                    style="max-width: 400px"
+                    alt="VinWonders"
+                  />
+                </figure>
+                <p>
+                  -Vinpearl Safari:
+                  <a
+                    href="https://maps.app.goo.gl/2fZpumf4DLADJLea7"
+                    target="_blank"
+                    >Bãi Dài, Gành Dầu, Phú Quốc</a
+                  >
+                </p>
+                <figure>
+                  <img
+                    src="https://static.vinwonders.com/2022/04/du-lich-kien-giang-03.jpg"
+                    class="w3-container"
+                    alt="Vinpearl Safari"
+                  />
+                </figure>
+                <p>
+                  -Làng chài Rạch Vẹm:
+                  <a
+                    href="https://maps.app.goo.gl/dDuH5RTJWZCU9w8m7"
+                    target="_blank"
+                    >Rạch Vẹm, Phú Quốc</a
+                  >
+                </p>
+                <figure>
+                  <img
+                    src="https://www.tourdulichbentre.com/images/gia-ve-lang-chai-rach-bem.jpg"
+                    class="w3-container"
+                    alt="Làng chài Rạch Vẹm"
+                  />
+                  <figcaption style="font-size: smaller">
+                    (Nguồn:
+                    <a
+                      href="https://www.tourdulichbentre.com/du-lich-lang-chai-rach-vem-phu-quoc-2019"
+                      target="_blank"
+                      >Tour Du Lịch Bến Tre</a
+                    >)
+                  </figcaption>
+                </figure>
+                <p>
+                  -Chùa Hộ Quốc:
+                  <a
+                    href="https://maps.app.goo.gl/hBQPzwdaietinBan9"
+                    target="_blank"
+                    >Dương Tơ, Phú Quốc</a
+                  >
+                </p>
+                <figure>
+                  <img
+                    src="https://static.vinwonders.com/production/Chua-Ho-Quoc-Phu-Quoc.jpg"
+                    alt="Chùa Hộ Quốc"
+                  />
+                </figure>
+                <p>
+                  -Chợ đêm Phú Quốc:
+                  <a
+                    href="https://maps.app.goo.gl/SjQXjbTRBzwUBZHB9"
+                    target="_blank"
+                    >54 Đường Nguyễn Trãi, Phú Quốc</a
+                  >
+                </p>
+                <figure>
+                  <img
+                    src="https://static.vinwonders.com/2022/04/du-lich-kien-giang-08.jpg"
+                    alt="Chợ đêm Phú Quốc"
+                  />
+                  <figcaption style="font-size: smaller">
+                    (Nguồn thông tin:
+                    <a
+                      href="https://vinwonders.com/vi/wonderpedia/news/du-lich-an-giang/"
+                      target="_blank"
+                      >VinWonders</a
+                    >)
+                  </figcaption>
+                </figure>
+              </details>
+            </li>
+          </ol>
+        </article>
+      </section>
+      <hr />
+
+      <script>
+        const paragraphs = document.querySelectorAll("summary");
+        paragraphs.forEach((p) => p.classList.add("ccc"));
+      </script>
+
+      <section class="w3-row w3-padding-16" id="tiemnang">
+        <h1 class="w3-center" style="font-size: 50px">TIỀM NĂNG PHÁT TRIỂN</h1>
+        <article style="font-size: 20px; line-height: 1.7">
+          <p>
+            <b>- Vị trí & vai trò chiến lược:</b>
+            Cà Mau là tỉnh cực nam Việt Nam, có ba phía giáp biển, vị trí quan
+            trọng trong phát triển kinh tế biển, thủy sản và logistics; thuận
+            lợi kết nối với các tỉnh trong ĐBSCL và các nước trong tiểu vùng
+            sông Mekong.
+          </p>
+
+          <p>
+            <b>- Tăng trưởng kinh tế:</b>
+          </p>
+          <ul>
+            <li>
+              Tốc độ tăng trưởng kinh tế 2025 ước đạt <u>8%</u>, đáp ứng mục
+              tiêu đề ra.
+            </li>
+            <li>
+              Cơ cấu kinh tế 2025:
+              <ul>
+                <li>Nông-lâm-ngư nghiệp: <u>34,8% GDP</u></li>
+                <li>Công nghiệp-xây dựng: <u>24,2% GDP</u></li>
+                <li>Dịch vụ: <u>36,5% GDP</u></li>
+              </ul>
+            </li>
+            <li>GDP theo giá hiện tại: <u>6,88 tỷ USD</u></li>
+            <li>GDP bình quân đầu người: <u>3.200 USD/năm</u></li>
+          </ul>
+
+          <p>
+            <b>- Hạ tầng & dự án trọng điểm:</b>
+          </p>
+          <ul>
+            <li>
+              Khởi công: đường cao tốc Cà Mau – Đất Mũi, đường Đất Mũi – cảng
+              Hòn Khoai, cảng Hòn Khoai, mở rộng sân bay Cà Mau.
+            </li>
+            <li>
+              Hoàn thành: Khu liên hợp thể thao Bạc Liêu, nâng cấp đường Cà Mau
+              – Đầm Dơi, cầu sông Gành Hào, quảng trường Phan Ngọc Hiền.
+            </li>
+            <li>
+              Vốn đầu tư toàn xã hội 2025: <u>2,88 tỷ USD</u>, tăng
+              <u>23,2%</u> so với năm trước.
+            </li>
+          </ul>
+
+          <p>
+            <b>- Thu hút đầu tư & hợp tác quốc tế:</b>
+          </p>
+          <ul>
+            <li>
+              Hơn 34 đoàn nhà đầu tư trong và ngoài nước quan tâm đến KCN và khu
+              kinh tế tỉnh.
+            </li>
+            <li>
+              Dự án nổi bật:
+              <ul>
+                <li>
+                  Tập đoàn SK (Hàn Quốc): tổ hợp năng lượng công nghiệp, nhà máy
+                  khí LNG 1.500MW.
+                </li>
+                <li>
+                  Lee Kang Holdings (Hàn Quốc): nhà máy giày dép và phụ kiện tại
+                  KCN Tắc Thu.
+                </li>
+                <li>
+                  DongSung Vina (Hàn Quốc) & Vantex Industrial (Trung Quốc): dự
+                  án dệt may tại KCN Khánh An.
+                </li>
+              </ul>
+            </li>
+            <li>
+              Hợp tác quốc tế: Campuchia, Lào, Hàn Quốc, Singapore, Nhật Bản.
+            </li>
+            <li>
+              Dự kiến xuất khẩu <u>1.200 lao động</u> đi làm việc ở nước ngoài
+              năm 2025.
+            </li>
+          </ul>
+
+          <p>
+            <b>- Sự kiện, quảng bá & du lịch:</b>
+          </p>
+          <ul>
+            <li>
+              Các lễ hội nổi bật: Lễ hội Thủ công Muối Việt Nam, Lễ hội Cua Cà
+              Mau.
+            </li>
+            <li>
+              Diễn đàn doanh nghiệp giúp kết nối đầu tư và xúc tiến thương mại.
+            </li>
+          </ul>
+
+          <p>
+            <b>- Mục tiêu phát triển năm 2026:</b>
+          </p>
+          <ul>
+            <li>Mở rộng sân bay Cà Mau.</li>
+            <li>Xây dựng Bệnh viện Đa khoa 1.200 giường.</li>
+            <li>
+              Phát triển đường Vành đai 1-3, cầu Hòa Bình 2, cầu Vàm Xăng.
+            </li>
+            <li>Khu nông nghiệp công nghệ cao Bạc Liêu (phát triển tôm).</li>
+          </ul>
+
+          <p>
+            <b>- Tầm nhìn chiến lược:</b>
+          </p>
+          <ul>
+            <li>
+              Cà Mau hướng tới trở thành cực tăng trưởng của Đồng bằng sông Cửu
+              Long, trung tâm phát triển nhanh, bền vững và toàn diện.
+            </li>
+            <li>
+              Tỉnh nhấn mạnh hợp tác lâu dài với doanh nghiệp trong và ngoài
+              nước, thúc đẩy phát triển kinh tế – xã hội toàn diện.
+            </li>
+          </ul>
+
+          <p>
+            👉 <b>Tổng thể</b>, Cà Mau đang nổi lên là điểm đến đầu tư tiềm năng
+            của ĐBSCL với định hướng phát triển bền vững, hạ tầng ngày càng hoàn
+            thiện và quyết tâm cao của chính quyền trong thu hút và hỗ trợ nhà
+            đầu tư.
+          </p>
+          <p style="font-size: 15px" class="w3-center">
+            (Nguồn thông tin:
+            <a
+              href="https://vov.vn/kinh-te/ca-mau-ky-vong-phat-trien-vuot-bac-sau-sap-nhap-post1211245.vov"
+              target="_blank"
+              >vov.vn</a
+            >
+            )
+          </p>
+        </article>
+      </section>
+      <hr />
+    </main>
+
+    <footer class="w3-center w3-light-grey w3-padding-32">
+      <p>HẾT!</p>
+    </footer>
+    <script>
+      function toggleMenu() {
+        const navMenu = document.getElementById("navMenu");
+        if (navMenu) {
+          navMenu.classList.toggle("w3-hide");
+        }
+      }
+    </script>
+  </body>
+</html>
