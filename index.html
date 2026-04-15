@@ -29,18 +29,15 @@
     <a href="#hero" class="scroll-top-button">
       <i class="fas fa-chevron-up"></i>
     </a>
-
     <aside id="backToTop">
       <a href="#hero" aria-label="Lên đầu trang">
         <span class="arrow arrow-1"></span>
         <span class="arrow arrow-2"></span>
       </a>
     </aside>
-
     <aside class="box w3-right" style="margin-top: 2%">
       <p class="text">Chào mừng đến với tỉnh Cà Mau!</p>
     </aside>
-
     <header class="w3-top">
       <nav
         class="w3-bar w3-white w3-padding w3-card"
@@ -88,18 +85,6 @@
             <a href="https://giabao123123.github.io/trochoicamau/">TRÒ CHƠI</a>
           </li>
         </ul>
-        <script>
-          const menuLinks = document.querySelectorAll("#menu-list a");
-          const menuToggle = document.getElementById("menu-toggle");
-          menuLinks.forEach((link) => {
-            link.addEventListener("click", () => {
-              if (window.innerWidth <= 768) {
-                menuToggle.checked = false;
-              }
-            });
-          });
-        </script>
-
         <nav
           style="
             background: linear-gradient(180deg, #ff9800, #ff5722);
@@ -140,21 +125,6 @@
         </nav>
       </nav>
     </header>
-    <script>
-      const menuScroll = document.querySelector(".menu-scroll");
-      const btnLeft = document.querySelector(".left-btn");
-      const btnRight = document.querySelector(".right-btn");
-      const step = 200;
-      if (btnRight && btnLeft && menuScroll) {
-        btnRight.addEventListener("click", () => {
-          menuScroll.scrollLeft += step;
-        });
-        btnLeft.addEventListener("click", () => {
-          menuScroll.scrollLeft -= step;
-        });
-      }
-    </script>
-
     <main class="w3-content" style="max-width: 1100px">
       <section class="w3-row w3-padding-16 w3-center" id="about">
         <h1 class="w3-center" style="color: red; font-size: 35px">
@@ -179,7 +149,7 @@
           <p style="font-size: 15px" class="w3-col">
             (nguồn thông tin:
             <a href="https://vi.wikipedia.org/wiki/C%C3%A0_Mau" target="_blank"
-              >wiki Cà Mau</a
+              >Wikipedia Cà Mau</a
             >
             )
           </p>
@@ -201,7 +171,6 @@
         </figure>
       </section>
       <hr />
-
       <section class="w3-row-padding w3-padding-16" id="menu">
         <h1 class="w3-padding-16 w3-center" style="color: red; font-size: 50px">
           ĐỊA LÝ
@@ -263,7 +232,7 @@
           <p style="font-size: 15px">
             (nguồn thông tin:
             <a href="https://vi.wikipedia.org/wiki/C%C3%A0_Mau" target="_blank"
-              >wiki Cà Mau</a
+              >Wikipedia Cà Mau</a
             >
             <br />
             <a
@@ -294,7 +263,6 @@
         </figure>
       </section>
       <hr />
-
       <section class="w3-row w3-padding-16" id="DIEUKIENTUNHIEN">
         <h1 class="w3-center" style="font-size: 50px">ĐIỀU KIỆN TỰ NHIÊN</h1>
         <article>
@@ -315,13 +283,12 @@
           <p style="font-size: 15px">
             (nguồn thông tin:
             <a href="https://vi.wikipedia.org/wiki/C%C3%A0_Mau" target="_blank"
-              >wiki Cà Mau</a
+              >Wikipedia Cà Mau</a
             >)
           </p>
         </article>
       </section>
       <hr />
-
       <section
         class="w3-container w3-padding-16 table-responsive"
         style="overflow-x: auto"
@@ -336,7 +303,6 @@
             Á nên khí hậu Cà Mau ôn hoà thuộc vùng cận xích đạo, nhiệt đới gió
             mùa, có 2 mùa mưa nắng rõ rệt: Mùa Mưa và mùa khô.
           </p>
-
           <table
             style="
               width: 100%;
@@ -462,7 +428,6 @@
               <td style="background: #0000e2; color: #ffffff">80</td>
             </tr>
           </table>
-
           <p>
             <strong>Lưu ý:</strong> Các giá trị trong bảng là ước lượng trung
             bình
@@ -470,7 +435,7 @@
           <p style="font-size: 15px">
             (nguồn thông tin:
             <a href="https://vi.wikipedia.org/wiki/Cà_Mau" target="_blank"
-              >wiki Cà Mau</a
+              >Wikipedia Cà Mau</a
             ><br />
             <a href="https://nchmf.gov.vn" target="_blank">nchmf.gov.vn</a
             ><br />
@@ -489,6 +454,10 @@
         <h1 class="w3-padding-16" style="color: red; font-size: 50px">
           DỰ BÁO THỜI TIẾT TRONG TỈNH
         </h1>
+        <p>
+          ⚠️ Dữ liệu thời tiết hiện vẫn theo đơn vị hành chính cũ — chưa cập
+          nhật sau sáp nhập tỉnh.
+        </p>
         <div
           style="
             max-width: 760px;
@@ -512,7 +481,6 @@
           >
             Gõ tên xã / phường / thị trấn để xem dự báo thời tiết
           </p>
-
           <div
             style="position: relative; max-width: 440px; margin: 0 auto 22px"
           >
@@ -565,7 +533,6 @@
               "
             ></div>
           </div>
-
           <div
             id="tt-box"
             style="
@@ -602,7 +569,6 @@
             </div>
           </div>
         </div>
-
         <script>
           var TT_AREAS = [
             {
@@ -650,7 +616,6 @@
               parent: "Tỉnh Cà Mau cũ",
               widget: `<!--Begin thoitiet.app widget --><iframe src="https://thoitiet247.vn/widget/embed/ca-mau/ca-mau?style=2&day=7&td=%23ffffff&ntd=%231c84ee&mvb=%23848484&mv=%231c84ee&mdk=%23dddddd&htd=true" id="widgeturl" width="100%" height="550px" scrolling="no" frameborder="0" allowtransparency="true" style="border:none;overflow:hidden;"></iframe><!-- End thoitiet.app widget -->`,
             },
-
             {
               name: "Thành phố Bạc Liêu",
               parent: "Tỉnh Bạc Liêu cũ",
@@ -694,9 +659,7 @@
               .replace(/[\u0300-\u036f]/g, "")
               .replace(/đ/g, "d");
           }
-
           var ttFiltered = TT_AREAS.slice();
-
           function ttFilter() {
             var q = ttNorm(document.getElementById("tt-input").value.trim());
             ttFiltered = q
@@ -707,13 +670,11 @@
             ttRender();
             document.getElementById("tt-drop").style.display = "block";
           }
-
           function ttShow() {
             ttFiltered = TT_AREAS.slice();
             ttRender();
             document.getElementById("tt-drop").style.display = "block";
           }
-
           function ttRender() {
             var dd = document.getElementById("tt-drop");
             if (!ttFiltered.length) {
@@ -744,7 +705,6 @@
               })
               .join("");
           }
-
           function ttSelect(idx) {
             var a = TT_AREAS[idx];
             document.getElementById("tt-input").value = a.name;
@@ -753,13 +713,10 @@
             if (a.parent) {
               locationTitle += " (" + a.parent + ")";
             }
-
             document.getElementById("tt-name").textContent = locationTitle;
             document.getElementById("tt-box").style.display = "block";
-
             var wrap = document.getElementById("tt-widget-wrap");
             var noEmbed = document.getElementById("tt-noembed");
-
             if (a.widget && a.widget.trim()) {
               wrap.innerHTML = a.widget;
               wrap.style.display = "block";
@@ -769,18 +726,45 @@
               wrap.style.display = "none";
               noEmbed.style.display = "block";
             }
-
             document
               .getElementById("tt-box")
               .scrollIntoView({ behavior: "smooth", block: "start" });
           }
-
           document.addEventListener("click", function (e) {
             var inp = document.getElementById("tt-input");
             var drop = document.getElementById("tt-drop");
             if (drop && e.target !== inp && !drop.contains(e.target))
               drop.style.display = "none";
           });
+          const menuScroll = document.querySelector(".menu-scroll");
+          const btnLeft = document.querySelector(".left-btn");
+          const btnRight = document.querySelector(".right-btn");
+          const step = 200;
+          if (btnRight && btnLeft && menuScroll) {
+            btnRight.addEventListener("click", () => {
+              menuScroll.scrollLeft += step;
+            });
+            btnLeft.addEventListener("click", () => {
+              menuScroll.scrollLeft -= step;
+            });
+          }
+          const menuLinks = document.querySelectorAll("#menu-list a");
+          const menuToggle = document.getElementById("menu-toggle");
+          menuLinks.forEach((link) => {
+            link.addEventListener("click", () => {
+              if (window.innerWidth <= 768) {
+                menuToggle.checked = false;
+              }
+            });
+          });
+          function toggleMenu() {
+            const navMenu = document.getElementById("navMenu");
+            if (navMenu) {
+              navMenu.classList.toggle("w3-hide");
+            }
+          }
+          const paragraphs = document.querySelectorAll("summary");
+          paragraphs.forEach((p) => p.classList.add("ccc"));
         </script>
       </section>
       <hr />
@@ -1001,13 +985,12 @@
           <p style="font-size: 15px">
             (nguồn thông tin:
             <a href="https://vi.wikipedia.org/wiki/C%C3%A0_Mau" target="_blank"
-              >wiki Cà Mau</a
+              >Wikipedia Cà Mau</a
             >)
           </p>
         </article>
       </section>
       <hr />
-
       <section class="w3-row w3-padding-16" id="VANHOA">
         <h1 class="w3-center" style="font-size: 50px">VĂN HOÁ, LỄ HỘI</h1>
         <article>
@@ -1098,7 +1081,6 @@
               trợ mổ tim cho người nghèo.
             </li>
           </ul>
-
           <h2 style="font-size: 40px">
             <strong><mark>LỄ HỘI:</mark></strong>
           </h2>
@@ -1302,7 +1284,6 @@
         </article>
       </section>
       <hr />
-
       <section class="w3-row w3-padding-16" id="DITICH">
         <h1 class="w3-center" style="font-size: 50px">
           DI TÍCH, DI SẢN VĂN HOÁ
@@ -1346,7 +1327,6 @@
                   </figcaption>
                 </figure>
               </li>
-
               <li>
                 Di tích đình Tân Hưng<br />
                 -Địa điểm:
@@ -1372,7 +1352,6 @@
                   </figcaption>
                 </figure>
               </li>
-
               <li>
                 Di tích bến Vàm Lũng<br />
                 -Địa điểm:
@@ -1398,7 +1377,6 @@
                   </figcaption>
                 </figure>
               </li>
-
               <li>
                 Di tích chùa Cao Dân<br />
                 -Địa điểm:
@@ -1424,7 +1402,6 @@
                   </figcaption>
                 </figure>
               </li>
-
               <li>
                 Di tích Hòn Khoai<br />
                 -Địa điểm:
@@ -1451,7 +1428,6 @@
                   </figcaption>
                 </figure>
               </li>
-
               <li>
                 Di tích chùa Phật Tổ (Chùa Sắc Tứ Quan Âm Cổ Tự)<br />
                 -Địa điểm:
@@ -1477,7 +1453,6 @@
                   </figcaption>
                 </figure>
               </li>
-
               <li>
                 Di tích nhà Dây Thép<br />
                 -Địa điểm:
@@ -1503,7 +1478,6 @@
                   </figcaption>
                 </figure>
               </li>
-
               <li>
                 Di tích Hồng Anh Thư Quán<br />
                 -Địa điểm:
@@ -1529,7 +1503,6 @@
                   </figcaption>
                 </figure>
               </li>
-
               <li>
                 Di tích Biệt khu Hải Yến – Bình Hưng<br />
                 -Địa điểm:
@@ -1555,7 +1528,6 @@
                   </figcaption>
                 </figure>
               </li>
-
               <li>
                 Di tích Quốc gia Đặc biệt Căn cứ Cái Chanh<br />
                 -Địa điểm:
@@ -1581,7 +1553,6 @@
                   </figcaption>
                 </figure>
               </li>
-
               <li>
                 Phước Đức Cổ Miếu<br />
                 -Địa điểm:
@@ -1607,7 +1578,6 @@
                   </figcaption>
                 </figure>
               </li>
-
               <li>
                 Thành Hoàng Cổ Miếu<br />
                 -Địa điểm:
@@ -1633,7 +1603,6 @@
                   </figcaption>
                 </figure>
               </li>
-
               <li>
                 Đình An Trạch<br />
                 -Địa điểm:
@@ -1659,7 +1628,6 @@
                   </figcaption>
                 </figure>
               </li>
-
               <li>
                 Tháp cổ Vĩnh Hưng<br />
                 -Địa điểm:
@@ -1685,7 +1653,6 @@
                   </figcaption>
                 </figure>
               </li>
-
               <li>
                 Chùa Giác Hoa<br />
                 -Địa điểm:
@@ -1711,7 +1678,6 @@
                   </figcaption>
                 </figure>
               </li>
-
               <li>
                 Chùa Xiêm Cán<br />
                 -Địa điểm:
@@ -1737,7 +1703,6 @@
                   </figcaption>
                 </figure>
               </li>
-
               <li>
                 Chùa Cỏ Thum (Kusthum)<br />
                 -Địa điểm:
@@ -1763,7 +1728,6 @@
                   </figcaption>
                 </figure>
               </li>
-
               <li>
                 Đền thờ Chủ tịch Hồ Chí Minh<br />
                 -Địa điểm:
@@ -1789,7 +1753,6 @@
                   </figcaption>
                 </figure>
               </li>
-
               <li>
                 Di tích lịch sử Nọc Nạng<br />
                 -Địa điểm:
@@ -1817,7 +1780,6 @@
               </li>
             </ol>
           </details>
-
           <details>
             <summary
               class="w3-bar-item w3-button w3-padding"
@@ -1845,7 +1807,6 @@
                   </figcaption>
                 </figure>
               </li>
-
               <li>
                 -Nghề làm muối ba khía<br />
                 -Loại hình: Nghề truyền thống <br />
@@ -1865,7 +1826,6 @@
                   </figcaption>
                 </figure>
               </li>
-
               <li>
                 -Nghề làm mắm khô tôm<br />
                 -Loại hình: Nghề truyền thống <br />
@@ -1884,7 +1844,6 @@
                   </figcaption>
                 </figure>
               </li>
-
               <li>
                 -Nghi lễ và Lễ hội Nghinh Ông <br />
                 -Loại hình: Lễ hội truyền thống <br />
@@ -1904,7 +1863,6 @@
                   </figcaption>
                 </figure>
               </li>
-
               <li>
                 -Nghệ thuật trống lớn của đồng bào Khmer<br />
                 -Loại hình: Nghệ thuật biểu diễn <br />
@@ -1924,7 +1882,6 @@
                   </figcaption>
                 </figure>
               </li>
-
               <li>
                 -Tri thức dân gian & các kiến thức – phong tục truyền thống của
                 địa phương <br />
@@ -1939,7 +1896,6 @@
                   )
                 </p>
               </li>
-
               <li>
                 -Đờn ca tài tử Nam Bộ<br />
                 -Loại hình: Nghệ thuật biểu diễn <br />
@@ -1964,7 +1920,6 @@
         </article>
       </section>
       <hr />
-
       <section class="w3-row w3-padding-16" id="GIAODUC">
         <h1 class="w3-center" style="font-size: 50px">GIÁO DỤC</h1>
         <article>
@@ -1988,13 +1943,12 @@
             (nguồn thông tin:<a
               href="https://vi.wikipedia.org/wiki/C%C3%A0_Mau"
               target="_blank"
-              >wiki Cà Mau</a
+              >Wikipedia Cà Mau</a
             >)
           </p>
         </article>
       </section>
       <hr />
-
       <section class="w3-row w3-padding-16" id="KINHTE">
         <br />
         <h1 class="w3-center" style="font-size: 50px">KINH TẾ</h1>
@@ -2051,7 +2005,6 @@
             dự án nông nghiệp, công nghiệp chế biến, du lịch sinh thái được đầu
             tư, góp phần thúc đẩy phát triển kinh tế bền vững cho tỉnh An Giang.
           </p>
-
           <h2 style="text-align: center">Biểu đồ GRDP Cà Mau 1997–2024</h2>
           <p style="text-align: center">
             Đơn vị: nghìn tỷ đồng (giá hiện hành) / %
@@ -2063,13 +2016,12 @@
               <a
                 href="https://vi.wikipedia.org/wiki/C%C3%A0_Mau"
                 target="_blank"
-                >wiki Cà Mau</a
+                >Wikipedia Cà Mau</a
               >
               và ước tính tốc độ trung bình mỗi năm)
             </figcaption>
           </figure>
         </article>
-
         <script>
           const ctx = document.getElementById("grdpChart");
           new Chart(ctx, {
@@ -2134,7 +2086,6 @@
         </script>
       </section>
       <hr />
-
       <section class="w3-row w3-padding-16" id="AMTHUC">
         <h1 class="w3-center" style="font-size: 50px">ẨM THỰC</h1>
         <h2>-Cà Mau có rất nhiều đặc sản nổi tiếng có thể kể đến như:</h2>
@@ -2190,7 +2141,6 @@
                 </figure>
               </details>
             </li>
-
             <li>
               <details>
                 <summary class="w3-bar-item w3-button w3-padding">
@@ -2232,7 +2182,6 @@
                 </figure>
               </details>
             </li>
-
             <li>
               <details>
                 <summary class="w3-bar-item w3-button w3-padding">
@@ -2274,7 +2223,6 @@
                 </figure>
               </details>
             </li>
-
             <li>
               <details>
                 <summary class="w3-bar-item w3-button w3-padding">
@@ -2315,7 +2263,6 @@
                 </figure>
               </details>
             </li>
-
             <li>
               <details>
                 <summary class="w3-bar-item w3-button w3-padding">
@@ -2356,7 +2303,6 @@
                 </figure>
               </details>
             </li>
-
             <li>
               <details>
                 <summary class="w3-bar-item w3-button w3-padding">
@@ -2396,7 +2342,6 @@
                 </figure>
               </details>
             </li>
-
             <li>
               <details>
                 <summary class="w3-bar-item w3-button w3-padding">
@@ -2437,7 +2382,6 @@
                 </figure>
               </details>
             </li>
-
             <li>
               <details>
                 <summary class="w3-bar-item w3-button w3-padding">
@@ -2478,7 +2422,6 @@
                 </figure>
               </details>
             </li>
-
             <li>
               <details>
                 <summary class="w3-bar-item w3-button w3-padding">
@@ -2522,7 +2465,6 @@
                 </figure>
               </details>
             </li>
-
             <li>
               <details>
                 <summary class="w3-bar-item w3-button w3-padding">
@@ -2563,7 +2505,6 @@
                 </figure>
               </details>
             </li>
-
             <li>
               <details>
                 <summary class="w3-bar-item w3-button w3-padding">
@@ -2604,7 +2545,6 @@
                 </figure>
               </details>
             </li>
-
             <li>
               <details>
                 <summary class="w3-bar-item w3-button w3-padding">
@@ -2652,7 +2592,6 @@
         </article>
       </section>
       <hr />
-
       <section class="w3-row w3-padding-16" id="DULICH">
         <h1 class="w3-center" style="font-size: 50px">DU LỊCH</h1>
         <h2>-Cà Mau có những điểm du lịch nổi tiếng như:</h2>
@@ -2691,7 +2630,6 @@
                 </figure>
               </details>
             </li>
-
             <li>
               <details>
                 <summary class="w3-bar-item w3-button w3-padding">
@@ -2724,7 +2662,6 @@
                 </figure>
               </details>
             </li>
-
             <li>
               <details>
                 <summary class="w3-bar-item w3-button w3-padding">
@@ -2756,7 +2693,6 @@
                 </figure>
               </details>
             </li>
-
             <li>
               <details>
                 <summary class="w3-bar-item w3-button w3-padding">
@@ -2789,7 +2725,6 @@
                 </figure>
               </details>
             </li>
-
             <li>
               <details>
                 <summary class="w3-bar-item w3-button w3-padding">
@@ -2824,7 +2759,6 @@
                 </figure>
               </details>
             </li>
-
             <li>
               <details>
                 <summary class="w3-bar-item w3-button w3-padding">
@@ -2859,7 +2793,6 @@
                 </figure>
               </details>
             </li>
-
             <li>
               <details>
                 <summary class="w3-bar-item w3-button w3-padding">
@@ -2894,7 +2827,6 @@
                 </figure>
               </details>
             </li>
-
             <li>
               <details>
                 <summary class="w3-bar-item w3-button w3-padding">
@@ -2930,7 +2862,6 @@
                 </figure>
               </details>
             </li>
-
             <li>
               <details>
                 <summary class="w3-bar-item w3-button w3-padding">
@@ -2965,7 +2896,6 @@
                 </figure>
               </details>
             </li>
-
             <li>
               <details>
                 <summary class="w3-bar-item w3-button w3-padding">
@@ -3000,7 +2930,6 @@
                 </figure>
               </details>
             </li>
-
             <li>
               <details>
                 <summary class="w3-bar-item w3-button w3-padding">
@@ -3035,7 +2964,6 @@
                 </figure>
               </details>
             </li>
-
             <li>
               <details>
                 <summary class="w3-bar-item w3-button w3-padding">
@@ -3070,7 +2998,6 @@
                 </figure>
               </details>
             </li>
-
             <li>
               <details>
                 <summary class="w3-bar-item w3-button w3-padding">
@@ -3106,7 +3033,6 @@
                 </figure>
               </details>
             </li>
-
             <li>
               <details>
                 <summary class="w3-bar-item w3-button w3-padding">
@@ -3141,7 +3067,6 @@
                 </figure>
               </details>
             </li>
-
             <li>
               <details>
                 <summary class="w3-bar-item w3-button w3-padding">
@@ -3244,12 +3169,6 @@
         </article>
       </section>
       <hr />
-
-      <script>
-        const paragraphs = document.querySelectorAll("summary");
-        paragraphs.forEach((p) => p.classList.add("ccc"));
-      </script>
-
       <section class="w3-row w3-padding-16" id="tiemnang">
         <h1 class="w3-center" style="font-size: 50px">TIỀM NĂNG PHÁT TRIỂN</h1>
         <article style="font-size: 20px; line-height: 1.7">
@@ -3260,7 +3179,6 @@
             lợi kết nối với các tỉnh trong ĐBSCL và các nước trong tiểu vùng
             sông Mekong.
           </p>
-
           <p>
             <b>- Tăng trưởng kinh tế:</b>
           </p>
@@ -3280,7 +3198,6 @@
             <li>GDP theo giá hiện tại: <u>6,88 tỷ USD</u></li>
             <li>GDP bình quân đầu người: <u>3.200 USD/năm</u></li>
           </ul>
-
           <p>
             <b>- Hạ tầng & dự án trọng điểm:</b>
           </p>
@@ -3298,7 +3215,6 @@
               <u>23,2%</u> so với năm trước.
             </li>
           </ul>
-
           <p>
             <b>- Thu hút đầu tư & hợp tác quốc tế:</b>
           </p>
@@ -3332,7 +3248,6 @@
               năm 2025.
             </li>
           </ul>
-
           <p>
             <b>- Sự kiện, quảng bá & du lịch:</b>
           </p>
@@ -3345,7 +3260,6 @@
               Diễn đàn doanh nghiệp giúp kết nối đầu tư và xúc tiến thương mại.
             </li>
           </ul>
-
           <p>
             <b>- Mục tiêu phát triển năm 2026:</b>
           </p>
@@ -3357,7 +3271,6 @@
             </li>
             <li>Khu nông nghiệp công nghệ cao Bạc Liêu (phát triển tôm).</li>
           </ul>
-
           <p>
             <b>- Tầm nhìn chiến lược:</b>
           </p>
@@ -3371,7 +3284,6 @@
               nước, thúc đẩy phát triển kinh tế – xã hội toàn diện.
             </li>
           </ul>
-
           <p>
             👉 <b>Tổng thể</b>, Cà Mau đang nổi lên là điểm đến đầu tư tiềm năng
             của ĐBSCL với định hướng phát triển bền vững, hạ tầng ngày càng hoàn
@@ -3391,17 +3303,8 @@
       </section>
       <hr />
     </main>
-
     <footer class="w3-center w3-light-grey w3-padding-32">
       <p>HẾT!</p>
     </footer>
-    <script>
-      function toggleMenu() {
-        const navMenu = document.getElementById("navMenu");
-        if (navMenu) {
-          navMenu.classList.toggle("w3-hide");
-        }
-      }
-    </script>
   </body>
 </html>
